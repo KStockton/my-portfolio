@@ -3,13 +3,25 @@
   justify-content: center;
 }
 .Home-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffffc2;
   width: 49rem;
   height: 22rem;
   border: none;
-  position: absolute;
-  bottom: 37%;
+  // position: absolute;
+  // bottom: 37%;
   border-radius: 8px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+  width: 30px;
 }
 a {
   text-decoration: none; 
@@ -18,7 +30,7 @@ a {
   .Home-fontawesome {
     font-size: 40px
   }
-  &:hover{
+  &:hover {
     color: white;
   }
 }

@@ -15,12 +15,16 @@ const Home = () => {
     <div id="Home">
       <div className="Home-wrapper">
       <h1>Welcome</h1>
-      <a href="https://github.com/KStockton">
+      <p>Michael</p>
+      <p><span></span>King-Stockton<span></span></p>
+      <ul>
+      <li><a href="https://github.com/KStockton">
         <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
-      </a>
-      <a href="https://www.linkedin.com/in/michaelkingstockton/">
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/michaelkingstockton/">
         <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedin}/>
-      </a>
+      </a></li>
+      </ul>
       </div >
 
     </div>

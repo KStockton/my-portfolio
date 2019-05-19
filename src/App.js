@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header/Header'
+import Nav from './Nav/Nav'
 import Home from './Home/Home'
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact'
@@ -28,7 +28,7 @@ export default class App extends Component {
     return (
       <div>
         <div className="App">
-        <Header/>
+        <Nav/>
       <Switch>
         <Route  exact path="/" component={Home} />
         <Route path="/portfolio" component={Portfolio} />
