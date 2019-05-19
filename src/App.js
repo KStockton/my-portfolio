@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { Router, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './Header/Header'
+import Home from './Home/Home'
+import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact'
 
 export default class App extends Component {
   constructor() {
@@ -26,28 +29,14 @@ export default class App extends Component {
       <div>
         <div className="App">
         <Header/>
-      <header className="App-header">
       <Switch>
-        
+        <Route  exact path="/" component={Home} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact}/>
       </Switch>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-      </header>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
     </div>
       </div>
     )
   }
 }
-
-
-
-
-
-
-
-
-
-export default App;
