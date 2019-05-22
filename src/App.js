@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
-import logo from './logo.svg';
+import resume from './resume.pdf';
 import './App.css';
 import Nav from './Nav/Nav'
 import Home from './Home/Home'
@@ -28,6 +28,7 @@ export default class App extends Component {
     return (
       <div>
         <div className="App">
+        <a href={resume} download>Download Resume</a>
         <Nav/>
       <Switch>
         <Route  exact path="/" component={Home} />
