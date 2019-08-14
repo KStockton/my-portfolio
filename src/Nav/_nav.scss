@@ -30,10 +30,7 @@
   }
 
     li {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      @include displayFlex(center, null, center, row);
       list-style-type: none;
       transition: ease-in 100ms; 
       width: 100%;

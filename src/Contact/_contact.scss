@@ -2,4 +2,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  input {
+    border: $input-border;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
+    width: $input-width;
+
+    &:focus {
+      border: $input-fs-border;
+      outline: none;
+    }
+  }
+  textarea {
+    border: $input-border;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
+    resize: none;
+    width: 15rem;
+    height: 13rem;
+
+    &:focus {
+      border: $input-fs-border;
+      outline: none;
+    }
+  }
+
+  button {
+    border: $input-border;
+    font-size: 16px;
+    width: 15rem;
+  }
 }
+
