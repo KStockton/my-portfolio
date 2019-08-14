@@ -4,11 +4,6 @@ import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-// import fontawesome from '@fortawesome/fontawesome';
-// fontawesome.library.add(faFreeSolid);
-// fontawesome.dom.i2svg()
-
-
 const Home = () => {
 
   return (
@@ -16,7 +11,7 @@ const Home = () => {
       <div className="Home-wrapper">
       <h1>Welcome</h1>
       <p>Michael</p>
-      <p><span></span>King-Stockton<span></span></p>
+      <p><span>King-Stockton</span></p>
       <ul>
       <li><a href="https://github.com/KStockton">
         <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
