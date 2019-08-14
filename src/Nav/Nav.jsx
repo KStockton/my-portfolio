@@ -20,21 +20,25 @@ export default class Nav extends Component {
   render() {
     let menu
     if(this.state.checked){
-      menu = <nav className="Home-nav">
-      <NavLink to='/'>
-      <FontAwesomeIcon icon={faHome} className="icon"/>
-      Home</NavLink>
-      <NavLink to='/portfolio' className="nav"> 
-      <FontAwesomeIcon icon={faSuitcase} className="icon"/>
-      Portfolio</NavLink>
-      <NavLink to='/contact' className="nav">
-      <FontAwesomeIcon icon={faEnvelope} className="icon"/>
-    Contact</NavLink>
+      menu = 
+      <nav className="Home-nav">
+        <NavLink to='/'>
+          <FontAwesomeIcon icon={faHome} className="icon"/>
+            Home
+        </NavLink>
+        <NavLink to='/portfolio' className="nav"> 
+          <FontAwesomeIcon icon={faSuitcase} className="icon"/>
+          Portfolio
+        </NavLink>
+        <NavLink to='/contact' className="nav">
+          <FontAwesomeIcon icon={faEnvelope} className="icon"/>
+            Contact
+        </NavLink>
     </nav>
     }
     return (
       <header>
-      {menu}
+        {menu}
       <input type="checkbox" className="toggle" id="menu" value={this.state.checked} onClick={this.handleClick}/>
         <label for="menu">
           <div className="bar top"></div>

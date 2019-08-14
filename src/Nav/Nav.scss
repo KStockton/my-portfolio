@@ -28,10 +28,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  // display: none;
+  display: none;
 } 
 
 input[type=checkbox] + label {
+
   .bar {
   display: block;
   width: 36px;
@@ -39,11 +40,22 @@ input[type=checkbox] + label {
   background-color: white;
   margin: 4px;
   transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+  }
+
   .top {
     transform: rotate(0);
+    transform-origin: 10% 100%;
+
   }
   .middle {
     opacity: 1
+  }
+  .bottom {
+    transform: rotate(0);
+    transform-origin: 20% 100%;
   }
 }
 }
