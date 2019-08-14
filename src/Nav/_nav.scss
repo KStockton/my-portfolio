@@ -1,13 +1,16 @@
  header {
-   display: flex;
-   justify-content: flex-end;
+  //  display: flex;
+  //  justify-content: flex-end;
+   position: relative;
  }
  
 .Home-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
   background-color: #ffffffba;
   width: 21rem;
   padding: 18px;
@@ -20,6 +23,13 @@
 
  label {
    padding: 12px;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+
+   &:hover {
+     cursor: pointer;
+   }
  }
 
  .toggle {
@@ -37,13 +47,9 @@ input[type=checkbox] + label {
   display: block;
   width: 36px;
   height: 4px;
-  background-color: white;
+  background-color: black;
   margin: 4px;
   transition: all 0.2s;
-
-  &:hover {
-    cursor: pointer;
-  }
 
   .top {
     transform: rotate(0);

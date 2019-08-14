@@ -25,7 +25,6 @@ export default class App extends Component {
         <Route path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact}/>
       </Switch>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
     </div>
       </div>
     )
