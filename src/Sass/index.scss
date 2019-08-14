@@ -1,3 +1,10 @@
+@import './variables';
+@import '../App/App.scss';
+@import '../Home/Home.scss';
+@import '../Nav/Nav.scss';
+@import '../Portfolio/portfolio';
+
+
 
 *,
 *::before,
@@ -14,10 +21,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../Images/Nm9Hoa.jpg'), linear-gradient( rgba(0, 0, 0, 0.842), rgba(20, 3, 3, 0.5) );
-  box-sizing: border-box;
+  // background-image: url('../Images/Nm9Hoa.jpg'), linear-gradient( rgba(0, 0, 0, 0.842), rgba(20, 3, 3, 0.5) );
 }
 
 code {

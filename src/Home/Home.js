@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.scss';
 import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { faHome, faSuitcase, faEnvelope} from '@fortawesome/fontawesome-free-solid';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './Nav.scss'
 
  
 export default class Nav extends Component {

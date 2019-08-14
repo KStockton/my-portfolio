@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
-import resume from '../resume.pdf';
-import './App.scss';
+// import resume from '../resume.pdf';
 import Nav from '../Nav/Nav'
-import Home from '../Home/Home'
+import Home from '../Home/Home';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact'
 
@@ -18,7 +17,8 @@ export default class App extends Component {
     return (
       <div>
         <div className="App">
-        <a href={resume} download>Download Resume</a>
+          {/* {move to nave for resume } */}
+        {/* <a href={resume} download>Download Resume</a> */}
         <Nav/>
       <Switch>
         <Route  exact path="/" component={Home} />
