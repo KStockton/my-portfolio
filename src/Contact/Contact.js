@@ -43,9 +43,9 @@ const Contact = () => (
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
-            placeholder='Enter Name'
+            placeholder='Name'
             />
-          { errors.name && touched.name && <div>{errors.name}</div>}
+          { errors.name && touched.name ? <div>{errors.name}</div> : <div/>}
           <input 
             type='email'
             name='email'
@@ -54,7 +54,7 @@ const Contact = () => (
             value={values.email}
             placeholder='Enter Email'
             />
-          { errors.email && touched.email && <div>{errors.email}</div>}
+          { errors.email && touched.email ? <div>{errors.email}</div> : <div/>}
           <Field
             component='textarea'
             name='message'
@@ -63,8 +63,8 @@ const Contact = () => (
             value={values.message}
             placeholder='Enter Message'
             />
-          { errors.message && touched.message && <div>{errors.message}</div>}
-          {status && status.msg && <div>{status.msg}</div>}
+          { errors.message && touched.message ? <div>{errors.message}</div> : <div/>}
+          { status && status.msg ? <div>{status.msg}</div> : <div/>}
             <button type='submit' disabled={isSubmitting}>
               Submit
             </button>
