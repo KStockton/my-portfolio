@@ -1,16 +1,17 @@
 import React from 'react';
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
+import chat from '../assets/chatIcon.png';
 
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
     .max(50, 'Too Long!')
-    .required('Required'),
+    .required('Name Required'),
   email: Yup.string()
     .email('Invalid email')
-    .required('Required'),
+    .required('Email Required'),
   message: Yup.string()
     .min(1, 'Too Short!')
     .required('Required')
@@ -37,6 +38,7 @@ const Contact = () => (
     }) => (
       <div className='form-container'>
         <form onSubmit={handleSubmit} id='contact-form'>
+        <img src={chat} alt='chat icon'/>
           <input
             type='name'
             name='name'
