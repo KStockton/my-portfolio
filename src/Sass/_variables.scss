@@ -12,3 +12,7 @@ $input-padding: 6px;
 $input-width: 15rem;
 $input-bg-color: green;
 $input-fs-border: 1px solid gold;
+
+@mixin transition($time-motion){
+  transition: $time-motion;
+}

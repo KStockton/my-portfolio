@@ -35,42 +35,41 @@ const Contact = () => (
       handleSubmit,
       isSubmitting
     }) => (
-      <form onSubmit={handleSubmit} id='contact-form'>
-        <label htmlFor='name'>Your Name</label>
-        <input
-          type='name'
-          name='name'
-          onChange={handleChange}
-          onBlur={handleBlur}
-          value={values.name}
-          placeholder='Enter Name'
-          />
-        { errors.name && touched.name && <div>{errors.name}</div>}
-        <label htmlFor='email'>Your Email</label>
-        <input 
-          type='email'
-          name='email'
-          onChange={handleChange}
-          onBlur={handleBlur}
-          value={values.email}
-          placeholder='Enter Email'
-          />
-        { errors.email && touched.email && <div>{errors.email}</div>}
-        <label htmlFor='message'>Your Message</label>
-        <Field
-          component='textarea'
-          name='message'
-          onChange={handleChange}
-          onBlur={handleBlur}
-          value={values.message}
-          placeholder='Enter Message'
-          />
-        { errors.message && touched.message && <div>{errors.message}</div>}
-        {status && status.msg && <div>{status.msg}</div>}
-          <button type='submit' disabled={isSubmitting}>
-            Submit
-          </button>
-        </form>
+      <div className='form-container'>
+        <form onSubmit={handleSubmit} id='contact-form'>
+          <input
+            type='name'
+            name='name'
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.name}
+            placeholder='Enter Name'
+            />
+          { errors.name && touched.name && <div>{errors.name}</div>}
+          <input 
+            type='email'
+            name='email'
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.email}
+            placeholder='Enter Email'
+            />
+          { errors.email && touched.email && <div>{errors.email}</div>}
+          <Field
+            component='textarea'
+            name='message'
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.message}
+            placeholder='Enter Message'
+            />
+          { errors.message && touched.message && <div>{errors.message}</div>}
+          {status && status.msg && <div>{status.msg}</div>}
+            <button type='submit' disabled={isSubmitting}>
+              Submit
+            </button>
+          </form>
+      </div>
     )}
     />
     
