@@ -10,7 +10,7 @@ const Home = () => {
       <div className="Home-wrapper">
         <header>
           <h1>Michael</h1>
-          <p>King-<span>Stockton</span></p>
+          <p>King<span>~</span>Stockton</p>
         </header>
       <ul>
       <li><a href="https://github.com/KStockton">
