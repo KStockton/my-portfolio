@@ -38,7 +38,8 @@ const Contact = () => (
     }) => (
       <div className='form-container'>
         <form onSubmit={handleSubmit} id='contact-form'>
-        <img src={chat} alt='chat icon'/>
+          <h3>Connect Now</h3>
+        {/* <img src={chat} alt='chat icon'/> */}
           <input
             type='name'
             name='name'
