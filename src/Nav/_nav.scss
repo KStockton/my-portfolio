@@ -1,0 +1,99 @@
+ header {
+   position: relative;
+ }
+ 
+.Home-nav {
+  padding: 18px;
+  font-size: 18px;
+  position: absolute;
+  right: 58px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
+    background-color: #fff;
+    margin-left: 3px;
+
+    &:hover {
+      background-image: linear-gradient(to right,  rgb(97, 153, 228), rgba(0, 0, 0, 0.39));
+      border: 1px solid gold;
+      color: white;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-image: linear-gradient(to right,  rgb(42, 196, 4), rgba(0, 0, 0, 0.39));
+    }
+  }
+
+    li {
+      @include displayFlex(center, null, center, row);
+      list-style-type: none;
+      transition: ease-in 100ms; 
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem 1.5rem;
+    }
+}
+
+.icon {
+  padding-right: 4px;
+}
+
+header label {
+   padding: 18px;
+   position: absolute;
+   right: 0px;
+   top: 10px;
+ }
+
+ .toggle {
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: none;
+} 
+
+input[type=checkbox] + label {
+
+  .bar {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: black;
+  margin: 4px;
+  transition: all 0.2s;
+
+    .top {
+      transform: rotate(0);
+      transform-origin: 10% 100%;
+
+    }
+    .middle {
+      opacity: 1;
+    }
+    .bottom {
+      transform: rotate(0);
+      transform-origin: 20% 100%;
+    }
+  }
+}
+
+input[type=checkbox]:checked + label {
+  .top {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle {
+    opacity: 0;
+  }
+  .bottom {
+    transform: rotate(-45deg);
+    transform-origin: 20% 100%;
+  }
+}

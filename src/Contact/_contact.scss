@@ -1,0 +1,81 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B2DBD5;
+  height: 100vh;
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(35% - 50px);
+    height: 500px;
+    background-color: #1f86ff;
+    min-width: 300px;
+    position: relative;
+    padding-top: 40px;
+    border-radius: 14px;
+    
+    img {
+      width: 75px;
+      height: 69px; 
+      position: absolute;
+      top: -41px;
+      }
+
+    label {
+      text-align: left;
+    }
+
+    input, textarea {
+      border-radius: $input-border-radius;
+      padding: $input-padding;
+      width: $input-width;
+      border: none;
+
+      &:focus {
+        border: $input-fs-border;
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        color: grey;
+        @include transition(.3s ease-in);
+        transform-origin: 0 50%;
+      }
+
+      &:focus::-webkit-input-placeholder {
+        letter-spacing: 20px;
+        opacity: 0;
+      }
+    }
+    
+    div:nth-child(n+2):nth-child(-n+7) {
+      min-height: 43px;
+      padding: 12px;
+      font-size: 10px;
+      text-align: left;
+      color: red;
+    }
+
+    textarea {
+      resize: none;
+      width: 15rem;
+      height: 13rem;
+
+      &:focus {
+        border: $input-fs-border;
+        outline: none;
+      }
+    }
+
+    button {
+      border: $input-border;
+      font-size: 16px;
+      width: 15rem;
+      height: 2.6rem;
+      border-radius: 6px;
+    }
+  }
+}

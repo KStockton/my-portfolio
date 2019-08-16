@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.scss';
 import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -7,11 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Home = () => {
 
   return (
-    <div id="Home">
+    <div id="home">
       <div className="Home-wrapper">
-      <h1>Welcome</h1>
-      <p>Michael</p>
-      <p><span>King-Stockton</span></p>
+        <header>
+          <h1>Michael</h1>
+          <p>King<span>~</span>Stockton</p>
+        </header>
       <ul>
       <li><a href="https://github.com/KStockton">
         <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
