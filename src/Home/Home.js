@@ -12,17 +12,24 @@ const Home = () => {
           <p>King<span>-</span>Stockton</p>
         </header>
       <ul className="resource-links">
-        <li>
           <a href="https://github.com/KStockton">
-          <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
-          </a>
-        </li>
         <li>
-          <a href="https://www.linkedin.com/in/michaelkingstockton/">
-          <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedin}/>
-          </a>
+          <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
         </li>
+          </a>
+          <a href="https://www.linkedin.com/in/michaelkingstockton/">
+        <li>
+          <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedin}/>
+        </li>
+          </a>
       </ul>
+      <section>
+        <article>Vue.js</article>
+        <article>Trapper Keeper</article>
+        <article>Newswired</article>
+        <article>Pocket Ramiro</article>
+        <article>Movie Tracker</article>
+      </section>
     </div>
   )
 
