@@ -37,8 +37,6 @@
       background-image: linear-gradient(to right,  rgb(42, 196, 4), rgba(0, 0, 0, 0.39));
     }
   }
-
-
     li {
       @include displayFlex(center, null, center, row);
       list-style-type: none;
@@ -57,7 +55,7 @@ header label {
    padding: 18px;
    position: absolute;
    right: 0px;
-   top: 10px;
+   top: 4px;
  }
 
  .toggle {
@@ -79,31 +77,21 @@ input[type=checkbox] + label {
   margin: 4px;
   transition: all 0.2s;
 
-    .top {
-      transform: rotate(0);
-      transform-origin: 10% 100%;
-
-    }
     .middle {
       opacity: 1;
-    }
-    .bottom {
-      transform: rotate(0);
-      transform-origin: 20% 100%;
     }
   }
 }
 
 input[type=checkbox]:checked + label {
   .top {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform: translateY(16px) rotate(45deg);
   }
   .middle {
     opacity: 0;
   }
   .bottom {
-    transform: rotate(-45deg);
-    transform-origin: 20% 100%;
+    transform: translateY(0px) rotate(-45deg);
+
   }
 }

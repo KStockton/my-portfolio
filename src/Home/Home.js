@@ -29,7 +29,14 @@ const Home = () => {
         <article>Newswired</article>
         <article>Pocket Ramiro</article>
         <article>Movie Tracker</article>
+        <article>Climb On</article>
+        <article>Palette Picker</article>
       </section>
+      <footer>
+        <article>Michael KS</article>
+        <article>Big Brother Big Sister</article>
+        <article>Contact Me</article>
+      </footer>
     </div>
   )
 
