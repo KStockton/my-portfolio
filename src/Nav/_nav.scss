@@ -11,7 +11,7 @@
   flex-direction: row;
   padding: 18px;
   font-size: 18px;
-  position: absolute;
+  position: fixed;
   right: 58px;
   top: 5px;
   z-index: 99;
@@ -52,18 +52,16 @@
 }
 
 header label {
-   padding: 18px;
-   position: absolute;
-   right: 0px;
-   top: 4px;
- }
+  padding: 12px;
+  position: fixed;
+  right: 18px;
+  top: 16px;
+  cursor: pointer;
+  border: 1px solid #b3a7a7;
+  box-shadow: inset 4px 0px 20px 0px #33333369;
+}
 
  .toggle {
-  position: absolute;
-  top: 71%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
   display: none;
 } 
 
@@ -76,22 +74,18 @@ input[type=checkbox] + label {
   background-color: black;
   margin: 4px;
   transition: all 0.2s;
-
-    .middle {
-      opacity: 1;
-    }
   }
 }
 
 input[type=checkbox]:checked + label {
   .top {
-    transform: translateY(16px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
   }
   .middle {
     opacity: 0;
   }
   .bottom {
-    transform: translateY(0px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
 
   }
 }

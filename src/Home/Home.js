@@ -24,13 +24,14 @@ const Home = () => {
           </a>
       </ul>
       <section>
-        <article>Vue.js</article>
+        <article className='vue-container'>
+          <h4>Synonyms in Vue</h4>
+        </article>
         <article>Trapper Keeper</article>
         <article>Newswired</article>
         <article>Pocket Ramiro</article>
         <article>Movie Tracker</article>
         <article>Climb On</article>
-        <article>Palette Picker</article>
       </section>
       <footer>
         <article>Michael KS</article>
