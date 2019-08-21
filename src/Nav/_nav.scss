@@ -1,12 +1,21 @@
  header {
    position: relative;
+
+   label {
+    z-index: 99;
+   }
  }
  
 .Home-nav {
+  display: flex;
+  flex-direction: row;
   padding: 18px;
   font-size: 18px;
   position: absolute;
   right: 58px;
+  top: 5px;
+  z-index: 99;
+
 
   a {
     text-decoration: none;
@@ -28,6 +37,7 @@
       background-image: linear-gradient(to right,  rgb(42, 196, 4), rgba(0, 0, 0, 0.39));
     }
   }
+
 
     li {
       @include displayFlex(center, null, center, row);

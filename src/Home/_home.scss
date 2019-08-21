@@ -5,18 +5,19 @@
   header {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: 161px 300px 28px;
-    height: 45%;
-    background: black;
-    position: absolute;
-    top: 80px;
-    width: 100vw;
+    grid-template-rows: 122px 276px;
+    padding-top: 5rem;
+    // margin-top: 5rem;
+    // height: 45%;
+    // position: absolute;
+    // top: 80px;
+    // width: 100vw;
 
     
     h1, p {
-      color: white;
+      color: black;
       font-size: 6rem;
-      text-align: left;
+      text-align: center;
       padding: 36px;
       margin: 0;
       font-weight: 100;
@@ -28,38 +29,45 @@
         from { opacity: 0; }
         to   { opacity: 1; }
     }
-    
   }
+
    span {
      color: yellow;
    }
   }
 }
-.Home-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffffc2;
-  width: 49rem;
-  height: 22rem;
-  border: none;
-  border-radius: 8px;
-}
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
 
-li {
-  list-style-type: none;
-  padding: 1rem;
-  width: 30px;
-}
+  // display: flex;
+  // flex-direction: column;
+  // background-color: #ffffffc2;
+  // width: 49rem;
+  // height: 22rem;
+  // border: none;
+  // border-radius: 8px;
+
+
+  .resource-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+
+
+
+
+// li {
+//   list-style-type: none;
+//   padding: 1rem;
+//   width: 30px;
+// }
 
 a {
   text-decoration: none; 
   color: black; 
   cursor: pointer;
+
   .Home-fontawesome {
     font-size: 40px
   }
