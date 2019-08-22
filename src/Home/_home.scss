@@ -5,18 +5,19 @@
   header {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: 161px 300px 28px;
-    height: 45%;
-    background: black;
-    position: absolute;
-    top: 80px;
-    width: 100vw;
+    grid-template-rows: 122px 276px;
+    padding-top: 5rem;
+    // margin-top: 5rem;
+    // height: 45%;
+    // position: absolute;
+    // top: 80px;
+    // width: 100vw;
 
     
     h1, p {
-      color: white;
+      color: black;
       font-size: 6rem;
-      text-align: left;
+      text-align: center;
       padding: 36px;
       margin: 0;
       font-weight: 100;
@@ -28,42 +29,159 @@
         from { opacity: 0; }
         to   { opacity: 1; }
     }
-    
   }
+
    span {
      color: yellow;
    }
   }
-}
-.Home-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffffc2;
-  width: 49rem;
-  height: 22rem;
-  border: none;
-  border-radius: 8px;
-}
+  .resource-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
+    a {
+      text-decoration: none; 
+      color: white;   
+    
+      li {
+        border: 2px solid black;
+        margin: 0rem 1rem;
+        padding: 5px;
+        width: 63px;
+        height: 56px;
+        background: black;
+  
+        &:hover {
+          cursor: pointer;
+          color: black;
+          background-color: white;
+        }
 
-li {
-  list-style-type: none;
-  padding: 1rem;
-  width: 30px;
-}
-
-a {
-  text-decoration: none; 
-  color: black; 
-  cursor: pointer;
-  .Home-fontawesome {
-    font-size: 40px
+        .Home-fontawesome {
+          font-size: 40px
+        }
+      }
+    }
   }
-  &:hover {
-    color: white;
+
+  section {
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    
+    article {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 2rem;
+      text-align: left;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .7;
+        z-index: 0;
+        mix-blend-mode: hard-light;
+      }
+      @supports (mix-blend-mode: hard-light){
+        .vue-container::after {
+          opacity: 1;
+        }
+      }
+  
+      & > * {
+        z-index: 10;
+        position: relative;
+      }
+    }
+    article:nth-child(1) {
+      background-image: url('../assets/abc.jpg');
+    }
+
+    article:nth-child(2) {
+      background-image: url('../assets/trapperkeeper.jpg');
+    }
+
+    article:nth-child(3) {
+      background-image: url('../assets/news.jpg');
+    }
+
+    article:nth-child(4) {
+      background-image: url('../assets/factory.jpg');
+    }
+    
+    article:nth-child(5) {
+      background-image: url('../assets/movie.jpg');
+    }
+
+    article:nth-child(6) {
+      background-image: url('../assets/climbon.jpg');
+    }
+      
+      h3 {
+      display: inline-block;      
+      position: relative;
+      color: white;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -.25rem;
+        bottom: -0.25rem;
+        left: -2rem;
+        width: calc(100% + 4rem);
+        background-color: #ee6352;
+        transform: scaleX(0.1);
+        transform-origin: left;
+        transition: transform 350ms ease-in;
+        z-index: -1;
+      }
+    }
+    
+    article:hover h3::after {
+      transform: scaleX(1);
+    }
+
+    article:hover p::after {
+      transform: scaleY(1);
+    }
+
+      p {
+        position: relative;
+        z-index: 100;
+        color: black;
+        padding: 1rem 1rem 1rem 0rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: -1rem;
+          background: #fff;
+          z-index: -1;
+          transform: scaleY(0);
+          transition: transform 250ms ease-in;
+        }
+
+      }
   }
 }
+
+
