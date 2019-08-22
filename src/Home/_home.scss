@@ -109,14 +109,28 @@
         article:nth-child(1) {
           background-image: url('../assets/abc.jpg');
         }
+
+        article:nth-child(2) {
+          background-image: url('../assets/trapperkeeper.jpg');
+        }
+
         article:nth-child(3) {
           background-image: url('../assets/news.jpg');
         }
+
+        article:nth-child(4) {
+          background-image: url('../assets/factory.jpg');
+        }
+        
         article:nth-child(5) {
           background-image: url('../assets/movie.jpg');
         }
+
+        article:nth-child(6) {
+          background-image: url('../assets/climbon.jpg');
+        }
           
-          h4 {
+          h3 {
           padding: 7vh;
           color: white;
         }
