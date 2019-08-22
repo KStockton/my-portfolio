@@ -82,8 +82,9 @@
       background-position: center center;
       padding: 2rem;
       text-align: left;
+      cursor: pointer;
 
-      &:after {
+      &::after {
         content: '';
         display: block;
         width: 100%;
@@ -151,9 +152,35 @@
         z-index: -1;
       }
     }
+    
     article:hover h3::after {
       transform: scaleX(1);
     }
+
+    article:hover p::after {
+      transform: scaleY(1);
+    }
+
+      p {
+        position: relative;
+        z-index: 100;
+        color: black;
+        padding: 1rem 1rem 1rem 0rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: -1rem;
+          background: #fff;
+          z-index: -1;
+          transform: scaleY(0);
+          transition: transform 250ms ease-in;
+        }
+
+      }
   }
 }
 
