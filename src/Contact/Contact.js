@@ -1,7 +1,6 @@
 import React from 'react';
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
-import chat from '../assets/chatIcon.png';
 
 
 const SignupSchema = Yup.object().shape({

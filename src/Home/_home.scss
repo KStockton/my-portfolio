@@ -80,7 +80,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      position: relative;
+      padding: 2rem;
+      text-align: left;
 
       &:after {
         content: '';
@@ -106,34 +107,53 @@
         position: relative;
       }
     }
-        article:nth-child(1) {
-          background-image: url('../assets/abc.jpg');
-        }
+    article:nth-child(1) {
+      background-image: url('../assets/abc.jpg');
+    }
 
-        article:nth-child(2) {
-          background-image: url('../assets/trapperkeeper.jpg');
-        }
+    article:nth-child(2) {
+      background-image: url('../assets/trapperkeeper.jpg');
+    }
 
-        article:nth-child(3) {
-          background-image: url('../assets/news.jpg');
-        }
+    article:nth-child(3) {
+      background-image: url('../assets/news.jpg');
+    }
 
-        article:nth-child(4) {
-          background-image: url('../assets/factory.jpg');
-        }
-        
-        article:nth-child(5) {
-          background-image: url('../assets/movie.jpg');
-        }
+    article:nth-child(4) {
+      background-image: url('../assets/factory.jpg');
+    }
+    
+    article:nth-child(5) {
+      background-image: url('../assets/movie.jpg');
+    }
 
-        article:nth-child(6) {
-          background-image: url('../assets/climbon.jpg');
-        }
-          
-          h3 {
-          padding: 7vh;
-          color: white;
-        }
+    article:nth-child(6) {
+      background-image: url('../assets/climbon.jpg');
+    }
+      
+      h3 {
+      display: inline-block;      
+      position: relative;
+      color: white;
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -.25rem;
+        bottom: -0.25rem;
+        left: -2rem;
+        width: calc(100% + 4rem);
+        background-color: #ee6352;
+        transform: scaleX(0.1);
+        transform-origin: left;
+        transition: transform 350ms ease-in;
+        z-index: -1;
+      }
+    }
+    article:hover h3::after {
+      transform: scaleX(1);
+    }
   }
 }
 

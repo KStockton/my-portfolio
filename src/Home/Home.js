@@ -25,19 +25,24 @@ const Home = () => {
       </ul>
       <section>
         <article>
-          <h3>Synonyms in Vue</h3>
+          <h3 className='card-title'>Synonyms</h3>
+          <p className='card-body'>A Thesaurus in Vue</p>
         </article>
         <article>
-          <h3>Trapper Keeper</h3>
+          <h3 className='card-title'>Trapper Keeper</h3>
+          <p className='card-body'>Keep up with Todo List</p>
         </article>
         <article>
-          <h3>Newswired</h3>
+          <h3 className='card-title'>Newswired</h3>
+          <p className='card-body'>Keep up with the latest news</p>
         </article>
         <article>
-          <h3>Pocket Ramiro</h3>P
+          <h3>Pocket Ramiro</h3>
+          <p className='card-body'>Track a facility</p>
         </article>
         <article>
           <h3>Movie Tracker</h3>
+          <p className='card-body'>View and save the latest movies</p>
         </article>
         <article>
           <h3>Climb On</h3>
