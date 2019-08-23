@@ -12,10 +12,9 @@
   padding: 18px;
   font-size: 18px;
   position: fixed;
-  right: 58px;
+  right: 83px;
   top: 5px;
   z-index: 99;
-
 
   a {
     text-decoration: none;
@@ -58,8 +57,7 @@ header label {
   top: 16px;
   cursor: pointer;
   border: 1px solid #b3a7a7;
-  box-shadow: inset 4px 0px 20px 0px #33333369;
-}
+  background-color: #ffffffba;}
 
  .toggle {
   display: none;
@@ -68,12 +66,12 @@ header label {
 input[type=checkbox] + label {
 
   .bar {
-  display: block;
-  width: 36px;
-  height: 4px;
-  background-color: black;
-  margin: 4px;
-  transition: all 0.2s;
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: black;
+    margin: 4px;
+    transition: all 0.2s;
   }
 }
 

@@ -7,12 +7,6 @@
     grid-auto-columns: 1fr;
     grid-template-rows: 122px 276px;
     padding-top: 5rem;
-    // margin-top: 5rem;
-    // height: 45%;
-    // position: absolute;
-    // top: 80px;
-    // width: 100vw;
-
     
     h1, p {
       color: black;
@@ -71,15 +65,19 @@
     grid-gap: 10px;
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+
+    a {
+      text-decoration: none;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
     
     article {
       width: 100%;
       height: 200px;
       position: relative;
       color: black;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       padding: 2rem;
       text-align: left;
       cursor: pointer;
@@ -97,8 +95,9 @@
         z-index: 0;
         mix-blend-mode: hard-light;
       }
+
       @supports (mix-blend-mode: hard-light){
-        .vue-container::after {
+        article::after {
           opacity: 1;
         }
       }
@@ -108,27 +107,27 @@
         position: relative;
       }
     }
-    article:nth-child(1) {
+    a:nth-child(1) {
       background-image: url('../assets/abc.jpg');
     }
 
-    article:nth-child(2) {
+    a:nth-child(2) {
       background-image: url('../assets/trapperkeeper.jpg');
     }
 
-    article:nth-child(3) {
+    a:nth-child(3) {
       background-image: url('../assets/news.jpg');
     }
 
-    article:nth-child(4) {
+    a:nth-child(4) {
       background-image: url('../assets/factory.jpg');
     }
     
-    article:nth-child(5) {
+    a:nth-child(5) {
       background-image: url('../assets/movie.jpg');
     }
 
-    article:nth-child(6) {
+    a:nth-child(6) {
       background-image: url('../assets/climbon.jpg');
     }
       
