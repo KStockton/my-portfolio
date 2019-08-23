@@ -1,8 +1,4 @@
 import React from 'react';
-import { faGithub, faLinkedinIn, fareact } from '@fortawesome/fontawesome-free-brands';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
 
 const Home = () => {
 
@@ -15,12 +11,12 @@ const Home = () => {
       <ul className="resource-links">
           <a href="https://github.com/KStockton">
         <li>
-          <FontAwesomeIcon className="Home-fontawesome" icon={faGithub}/> 
+          <i class="fab fa-github"></i>
         </li>
           </a>
           <a href="https://www.linkedin.com/in/michaelkingstockton/">
         <li>
-          <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedinIn}/>
+          <i class="fab fa-linkedin-in"></i>        
         </li>
           </a>
       </ul>
@@ -70,11 +66,11 @@ const Home = () => {
       </section>
       <footer>
         <p>About Me</p>
-
         <article>Big Brother Big Sister</article>
         <article>Contact Me</article>
         <p>This Project was build using</p>
         <i class="fab fa-react"></i>
+        <i class="fab fa-sass"></i>
         <p>Copyright &#169; 2019 Michael King-Stockton</p>
       </footer>
     </div>

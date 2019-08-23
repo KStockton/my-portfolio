@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #B2DBD5;
+  background-color: #ffffff;
   height: 100vh;
   
   
@@ -12,11 +12,10 @@
     align-items: center;
     width: calc(35% - 50px);
     height: 500px;
-    background-color: #1f86ff;
+    background-color: rgba(0,0,0,.8);
     min-width: 300px;
     position: relative;
-    padding-top: 40px;
-    border-radius: 14px;
+    padding: 40px;
     
     img {
       width: 75px;
@@ -54,9 +53,10 @@
     div:nth-child(n+2):nth-child(-n+7) {
       min-height: 43px;
       padding: 12px;
-      font-size: 10px;
+      font-size: 16px;
       text-align: left;
-      color: red;
+      color: white;
+      text-transform: capitalize;
     }
 
     textarea {
