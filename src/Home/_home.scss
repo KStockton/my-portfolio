@@ -5,8 +5,8 @@
   header {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: 122px 276px;
-    padding-top: 5rem;
+    grid-template-rows: repeat(auto-fit,minmax(185px,1fr));
+    padding: 7rem 0rem;
     
     h1, p {
       color: black;
@@ -46,15 +46,12 @@
         width: 63px;
         height: 56px;
         background: black;
+        font-size: 40px;
   
         &:hover {
           cursor: pointer;
           color: black;
           background-color: white;
-        }
-
-        .Home-fontawesome {
-          font-size: 40px
         }
       }
     }
@@ -160,13 +157,13 @@
       transform: scaleX(1);
     }
 
-    
     p {
       position: relative;
       z-index: 100;
       color: transparent;
       padding: 1rem 1rem 1rem 0rem;
       transition: color 250ms 250ms;
+      top: 4px;
       
       &::after {
         content: '';
