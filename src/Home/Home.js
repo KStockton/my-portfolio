@@ -1,5 +1,5 @@
 import React from 'react';
-import { faGithub, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
+import { faGithub, faLinkedinIn, fareact } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -61,11 +61,21 @@ const Home = () => {
             <p>View the closest climbing trails</p>
           </article>
         </a>
+        <a href='https://github.com/KStockton/Build-Your-Own-Backend'>
+          <article>
+            <h3>Backend NBA Draft 2019</h3>
+            <p>NBA Draft players and Teeams</p>
+          </article>
+        </a>
       </section>
       <footer>
-        <article>Michael KS</article>
+        <p>About Me</p>
+
         <article>Big Brother Big Sister</article>
         <article>Contact Me</article>
+        <p>This Project was build using</p>
+        <i class="fab fa-react"></i>
+        <p>Copyright &#169; 2019 Michael King-Stockton</p>
       </footer>
     </div>
   )

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { faHome, faSuitcase, faEnvelope} from '@fortawesome/fontawesome-free-solid';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
  
 class Nav extends Component {
   constructor() {
@@ -31,24 +28,23 @@ class Nav extends Component {
         { checked ? <ul className="Home-nav">
         <NavLink to='/'>
           <li>
-            <FontAwesomeIcon icon={faHome} className="icon"/>Home
+          <i class="fas fa-home"></i>
+            Home
           </li>
         </NavLink>
          <NavLink to='/portfolio' className="nav">
             <li>
-              <FontAwesomeIcon icon={faSuitcase} className="icon"/>Portfolio
+            <i class="fas fa-briefcase"></i>
+              Portfolio
             </li>
          </NavLink>
           <NavLink to='/contact' className="nav">
             <li>
-             <FontAwesomeIcon icon={faEnvelope} className="icon"/>
+            <i class="fas fa-envelope"></i>
               Contact
             </li>
           </NavLink>
-    </ul> :
-    null
-        
-      }
+    </ul> : null }
     </header>
   )
 }
