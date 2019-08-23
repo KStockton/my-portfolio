@@ -157,30 +157,35 @@
       transform: scaleX(1);
     }
 
+    
+    p {
+      position: relative;
+      z-index: 100;
+      color: transparent;
+      padding: 1rem 1rem 1rem 0rem;
+      transition: color 250ms 250ms;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: -1rem;
+        background: #fff;
+        z-index: -1;
+        transform: scaleY(0);
+        transition: transform 250ms ease-in 250ms;
+        transform-origin: top;
+      }
+    }
+    article:hover p {
+      color: #333;
+    }
+
     article:hover p::after {
       transform: scaleY(1);
     }
-
-      p {
-        position: relative;
-        z-index: 100;
-        color: black;
-        padding: 1rem 1rem 1rem 0rem;
-
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: -1rem;
-          background: #fff;
-          z-index: -1;
-          transform: scaleY(0);
-          transition: transform 250ms ease-in;
-        }
-
-      }
   }
 }
 

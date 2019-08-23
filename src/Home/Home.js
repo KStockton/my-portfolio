@@ -1,5 +1,5 @@
 import React from 'react';
-import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
+import { faGithub, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -19,7 +19,7 @@ const Home = () => {
           </a>
           <a href="https://www.linkedin.com/in/michaelkingstockton/">
         <li>
-          <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedin}/>
+          <FontAwesomeIcon  className="Home-fontawesome" icon={faLinkedinIn}/>
         </li>
           </a>
       </ul>
@@ -46,6 +46,7 @@ const Home = () => {
         </article>
         <article>
           <h3>Climb On</h3>
+          <p>View the closest climbing trails</p>
         </article>
       </section>
       <footer>
