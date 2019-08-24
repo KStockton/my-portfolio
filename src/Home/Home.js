@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <main>
-          <header>
+          <header className='name-title'>
             <h1>Michael King<span>-</span>Stockton</h1>
           </header>
         <ul className="resource-links">
@@ -78,26 +78,47 @@ const Home = () => {
         </section>
       </main>
       <footer>
-        <section>
+        <section className='one'>
           <h2>About Me</h2>
-          <p>Born and raised in Denver, Colorado.
-            I am a Software Engineer who loves the never ending challengebetween art, analysis,
+          <p id='info'>Born and raised in Denver, Colorado.
+            I am a Software Engineer who loves the never ending challenge between art, analysis,
             creativity, and code. I am seeking a software engineering position on an agile team that
             blends the never-ending challenge of complex problem solving with
             open minded curiosity.
           </p>
         </section>
         <section>
-          <article>
             <h2>Activities</h2>
-            <div>
-              icons
-            </div>
-          </article>
+            <ul>
+            <li>
+              <i class="fas fa-basketball-ball"></i>
+            </li>
+            <li>
+              <i class="fas fa-hands-helping"></i>
+            </li>
+            <li>
+              <i class="fas fa-book"></i>
+            </li>
+            <li>
+              <i class="fas fa-hiking"></i>
+            </li>
+            <li>
+              <i class="fas fa-plane"></i>
+            </li>
+            <li>
+              <i class="fas fa-football-ball"></i>
+            </li>
+            <li>
+              <i class="fas fa-puzzle-piece"></i>
+            </li>
+            <li>
+              <i class="fas fa-dog"></i>
+            </li>
+            </ul>
         </section>
-        <article>
-          <i class="fas fa-envelope"></i>Contact Me
-        </article>
+        <section>
+          <p><i class="fas fa-envelope"></i>Contact Me</p>
+        </section>
         <section>
           <p>This Project was build using</p>
           <i class="fab fa-react"></i>

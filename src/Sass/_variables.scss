@@ -17,6 +17,12 @@ $input-fs-border: 1px solid gold;
   transition: $time-motion;
 }
 
+@mixin background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 @keyframes typewriter {
   from {
     width: 0;
