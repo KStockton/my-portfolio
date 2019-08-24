@@ -1,7 +1,11 @@
 import React from 'react';
 import resume from '../assets/Michael_King-Stockton_Resume.pdf';
+import { portfolioInfo } from '../Util/Projects';
 
 const Home = () => {
+
+
+  
 
   return (
     <div>
@@ -10,71 +14,25 @@ const Home = () => {
             <h1>Michael King<span>-</span>Stockton</h1>
           </header>
         <ul className="resource-links">
-          <a href="https://github.com/KStockton">
-            <li>
-              <i class="fab fa-github"></i>
-            </li>
-          </a>
-          <a href="https://www.linkedin.com/in/michaelkingstockton/">
-            <li>
-              <i class="fab fa-linkedin-in"></i>        
-            </li>
-          </a>
-          <a href={resume} download>
-            <li>
-              <i class="far fa-file-pdf"></i>
-            </li>
-          </a>
+          { portfolioInfo.resourceLinks.map((item, index) =>
+            <a href={item.link} key={index}>
+              <li>
+                <i className={item.classname}></i>
+              </li>
+            </a>
+          )}
         </ul>
         <section>
-          <a href='https://github.com/KStockton/Vue.js-Synonyms-v1'>
-            <article>
-              <h3 className='card-title'>Synonyms</h3>
-              <p className='card-body'>A Thesaurus in Vue</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/Trapper-Keeper'>
-            <article>
-              <h3 className='card-title'>Trapper Keeper</h3>
-              <p className='card-body'>Keep up with Todo List</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/Newswired'>
-            <article>
-              <h3 className='card-title'>Newswired</h3>
-              <p className='card-body'>Keep up with the latest news</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/pocket_ramiro_react'>
-            <article>
-              <h3>Pocket Ramiro</h3>
-              <p className='card-body'>Track a facility</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/Movie-Tracker'>
-            <article>
-              <h3>Movie Tracker</h3>
-              <p className='card-body'>View and save the latest movies</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/climb-on'>
-            <article>
-              <h3>Climb On</h3>
-              <p>View the closest climbing trails</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/Build-Your-Own-Backend'>
-            <article>
-              <h3>Backend NBA Draft 2019</h3>
-              <p>NBA Draft Players and Teams in Express</p>
-            </article>
-          </a>
-          <a href='https://github.com/KStockton/swapi-box'>
-            <article>
-              <h3>Swapi Box</h3>
-              <p>Star Wars API</p>
-            </article>
-          </a>
+          { portfolioInfo.projects.map((project, index) => 
+            <a href={ project.link }>
+              <article>
+                <h3 className='card-title'>
+                  { project.name }
+                </h3>
+                <p>{ project.description }</p>
+              </article>
+            </a>
+           )}
         </section>
       </main>
       <footer>
@@ -90,39 +48,42 @@ const Home = () => {
         <section>
             <h2>Activities</h2>
             <ul>
-            <li>
-              <i class="fas fa-basketball-ball"></i>
-            </li>
-            <li>
-              <i class="fas fa-hands-helping"></i>
-            </li>
-            <li>
-              <i class="fas fa-book"></i>
-            </li>
-            <li>
-              <i class="fas fa-hiking"></i>
-            </li>
-            <li>
-              <i class="fas fa-plane"></i>
-            </li>
-            <li>
-              <i class="fas fa-football-ball"></i>
-            </li>
-            <li>
-              <i class="fas fa-puzzle-piece"></i>
-            </li>
-            <li>
-              <i class="fas fa-dog"></i>
-            </li>
+              { portfolioInfo.activities.map((activity, index))
+
+              }
+              <li>
+                <i className="fas fa-basketball-ball"></i>
+              </li>
+              <li>
+                <i className="fas fa-hands-helping"></i>
+              </li>
+              <li>
+                <i className="fas fa-book"></i>
+              </li>
+              <li>
+                <i className="fas fa-hiking"></i>
+              </li>
+              <li>
+                <i className="fas fa-plane"></i>
+              </li>
+              <li>
+                <i className="fas fa-football-ball"></i>
+              </li>
+              <li>
+                <i className="fas fa-puzzle-piece"></i>
+              </li>
+              <li>
+                <i className="fas fa-dog"></i>
+              </li>
             </ul>
         </section>
         <section>
-          <p><i class="fas fa-envelope"></i>Contact Me</p>
+          <p><i className="fas fa-envelope"></i>Contact Me</p>
         </section>
         <section>
           <p>This Project was build using</p>
-          <i class="fab fa-react"></i>
-          <i class="fab fa-sass"></i>
+          <i className="fab fa-react"></i>
+          <i className="fab fa-sass"></i>
           <p>Copyright &#169; 2019 Michael King-Stockton</p>
         </section>
       </footer>
