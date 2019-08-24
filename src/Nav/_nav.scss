@@ -2,7 +2,7 @@
    position: relative;
 
    label {
-    z-index: 99;
+    z-index: 102;
    }
  }
  
@@ -14,7 +14,7 @@
   position: fixed;
   right: 83px;
   top: 5px;
-  z-index: 99;
+  z-index: 102;
 
   a {
     text-decoration: none;
@@ -37,17 +37,18 @@
     }
   }
     li {
-      @include displayFlex(center, null, center, row);
+      @include displayFlex(null, null, center, row);
       list-style-type: none;
       transition: ease-in 100ms; 
       width: 100%;
       height: 100%;
       padding: 0.5rem 1.5rem;
-    }
-}
 
-.icon {
-  padding-right: 4px;
+      .fas {
+        padding-right: 8px;
+        text-align: center;
+      }
+    }
 }
 
 header label {
@@ -57,7 +58,9 @@ header label {
   top: 16px;
   cursor: pointer;
   border: 1px solid #b3a7a7;
-  background-color: #ffffffba;}
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.555);
+}
 
  .toggle {
   display: none;
@@ -85,5 +88,16 @@ input[type=checkbox]:checked + label {
   .bottom {
     transform: translateY(-7px) rotate(-45deg);
 
+  }
+}
+
+@media only screen and (max-width: 519px){
+  .Home-nav {
+    flex-direction: column;
+    top: -5px;
+
+    a {
+      margin: 5px;
+    }
   }
 }

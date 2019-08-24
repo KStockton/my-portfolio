@@ -12,7 +12,6 @@ class Nav extends Component {
   handleClick = (event) => {
     this.setState({checked: !this.state.checked})
   }
-
   
   render() {
     const { checked } = this.state

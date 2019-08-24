@@ -16,3 +16,21 @@ $input-fs-border: 1px solid gold;
 @mixin transition($time-motion){
   transition: $time-motion;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(0,0,0,0.8);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
