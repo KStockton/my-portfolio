@@ -5,7 +5,6 @@
   background-color: #ffffff;
   height: 100vh;
   
-  
   form {
     display: flex;
     flex-direction: column;
@@ -16,23 +15,25 @@
     min-width: 300px;
     position: relative;
     padding: 40px;
-    
-    img {
-      width: 75px;
-      height: 69px; 
-      position: absolute;
-      top: -41px;
-      }
+    border-radius: 3px;
+
+
+    h3 {
+      color: white;
+    }
 
     label {
       text-align: left;
     }
 
     input, textarea {
+      background: transparent;
       border-radius: $input-border-radius;
       padding: $input-padding;
       width: $input-width;
       border: none;
+      color: #fff;
+      border-bottom: 2px solid #fff;
 
       &:focus {
         border: $input-fs-border;

@@ -37,15 +37,14 @@ const Contact = () => (
     }) => (
       <div className='form-container'>
         <form onSubmit={handleSubmit} id='contact-form'>
-          <h3>Connect Now</h3>
-        {/* <img src={chat} alt='chat icon'/> */}
+          <h3>Get In Touch</h3>
           <input
             type='name'
             name='name'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
-            placeholder='Name'
+            placeholder='Name*'
             />
           { errors.name && touched.name ? <div>{errors.name}</div> : <div/>}
           <input 
@@ -54,7 +53,7 @@ const Contact = () => (
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
-            placeholder='Enter Email'
+            placeholder='Enter Email*'
             />
           { errors.email && touched.email ? <div>{errors.email}</div> : <div/>}
           <Field
@@ -63,12 +62,12 @@ const Contact = () => (
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.message}
-            placeholder='Enter Message'
+            placeholder='Enter Message*'
             />
           { errors.message && touched.message ? <div>{errors.message}</div> : <div/>}
           { status && status.msg ? <div>{status.msg}</div> : <div/>}
             <button type='submit' disabled={isSubmitting}>
-              Submit
+              Send Email
             </button>
           </form>
       </div>
