@@ -18,7 +18,10 @@ class Nav extends Component {
 
     return (
       <header>
-      <input type="checkbox" className="toggle" id="menu" value={this.state.checked} onClick={this.handleClick}/>
+        <input type="checkbox" 
+        id="menu" 
+        value={this.state.checked} 
+        onClick={this.handleClick}/>
         <label htmlFor="menu">
           <div className="bar top"></div>
           <div className="bar middle"></div>

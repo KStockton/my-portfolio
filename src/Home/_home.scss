@@ -2,7 +2,7 @@ main header {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(auto-fit,minmax(185px,1fr));
-    padding: 7rem 0rem;
+    padding: 7rem 8rem;
 
     h1 {
       border-right: 3px solid rgba(0,0,0,0);
