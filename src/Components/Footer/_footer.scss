@@ -115,6 +115,27 @@ footer {
         pointer-events: none;
         @include listItems;
         z-index: 2;
+        background-color: #ffffff;
+      }
+
+      li:nth-child(1) {
+        color: rgb(255, 165, 0);
+      }
+
+      li:nth-child(3) {
+        color: rgb(164, 78, 74);
+      }
+
+      li:nth-child(5) {
+        color: rgb(0, 191, 255);
+      }
+
+      li:nth-child(6) {
+        color: rgb(164, 78, 74);
+      }
+
+      li:nth-child(7) {
+        color: rgb(0, 128, 0);
       }
     }
   }
