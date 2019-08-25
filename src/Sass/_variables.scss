@@ -46,15 +46,7 @@ $link-txtdecoration: none;
   }
 }
 
-@mixin cornerBorders {
-  &::before, &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    @include cornerBorders();
-    background: #fff;
-    z-index: 1;
-  }
+@mixin footer-corner-borders {
 
   &::before {
     top: -0.3rem;
@@ -71,9 +63,6 @@ $link-txtdecoration: none;
   }
 }
 
-@mixin cornerborderColor($border-color){
-  background: $border-color;
-}
 // Main header animation
 @keyframes typewriter {
   from {
