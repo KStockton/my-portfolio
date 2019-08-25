@@ -45,28 +45,28 @@ export const portfolioInfo =
   }],
 activities: [
   {
-    classname: 'fa-basketball-ball'
+    classname: 'fas fa-basketball-ball'
   },
   {
-    classname: 'fa-hands-helping'
+    classname: 'fas fa-hands-helping'
   },
   {
-    classname: 'fa-book'
+    classname: 'fas fa-book'
   },
   {
-    classname: 'fa-hiking'
+    classname: 'fas fa-hiking'
   },
   {
-    classname: 'fa-plane'
+    classname: 'fas fa-plane'
   },
   {
-    classname: 'fa-football-ball'
+    classname: 'fas fa-football-ball'
   },
   {
-    classname: 'fa-puzzle-piece'
+    classname: 'fas fa-puzzle-piece'
   },
   {
-    classname: 'fa-dog'
+    classname: 'fas fa-dog'
   }],
   resourceLinks: [
     {
