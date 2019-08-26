@@ -2,8 +2,6 @@ import React from 'react';
 import { portfolioInfo } from '../../Util/Projects';
 const shortid = require('shortid');
 
-
-
 const Home = () => {
 
   return (

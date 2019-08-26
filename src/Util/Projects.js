@@ -21,7 +21,7 @@ export const portfolioInfo =
   {
     link: 'https://github.com/KStockton/pocket_ramiro_react',
     name: 'Pocket Ramiro',
-    description: 'Manage Facilitie Equipment'
+    description: 'Manage Facility Equipment'
   }, 
   {
     link: 'https://github.com/KStockton/Movie-Tracker',
