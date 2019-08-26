@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Nav from '../Nav/Nav'
+import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import Footer from '../Footer/Footer';
 import Portfolio from '../Portfolio/Portfolio';
@@ -18,7 +18,7 @@ const App = () => {
       </Switch>
       <Footer/>
     </div>
-  )
-}
+  );
+};
 
 export default App;

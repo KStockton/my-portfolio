@@ -3,53 +3,53 @@ import { NavLink } from 'react-router-dom';
  
 class Nav extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       checked: false
-    }
+    };
   }
 
-  handleClick = (event) => {
-    this.setState({checked: !this.state.checked})
+  handleClick = () => {
+    this.setState({checked: !this.state.checked});
   }
   
   render() {
-    const { checked } = this.state
+    const { checked } = this.state;
 
     return (
       <header>
         <input type="checkbox" 
-        id="menu" 
-        value={this.state.checked} 
-        onClick={this.handleClick}/>
+          id="menu" 
+          value={this.state.checked} 
+          onClick={this.handleClick}/>
         <label htmlFor="menu">
           <div className="bar top"></div>
           <div className="bar middle"></div>
           <div className="bar bottom"></div>
         </label>
         { checked ? <ul className="Home-nav">
-        <NavLink to='/'>
-          <li>
-          <i className="fas fa-home"></i>
-            Home
-          </li>
-        </NavLink>
-         <NavLink to='/portfolio' className="nav">
+          <NavLink to='/'>
             <li>
-            <i className="fas fa-briefcase"></i>
+              <i className="fas fa-home"></i>
+            Home
+            </li>
+          </NavLink>
+          <NavLink to='/portfolio' className="nav">
+            <li>
+              <i className="fas fa-briefcase"></i>
               Portfolio
             </li>
-         </NavLink>
+          </NavLink>
           <NavLink to='/contact' className="nav">
             <li>
-            <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope"></i>
               Contact
             </li>
           </NavLink>
-    </ul> : null }
-    </header>
-  )
-}
+        </ul> : null }
+      </header>
+    );
+  }
 }
 
 export default Nav;

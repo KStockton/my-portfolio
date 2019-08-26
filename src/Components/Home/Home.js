@@ -29,11 +29,11 @@ const Home = () => {
                 <p>{ project.description }</p>
               </article>
             </a>
-           )}
+          )}
         </section>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
