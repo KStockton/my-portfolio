@@ -12,7 +12,7 @@
   padding: 18px;
   font-size: 18px;
   position: fixed;
-  right: 83px;
+  right: 99px;
   top: 5px;
   z-index: 102;
 
@@ -54,7 +54,7 @@
 header label {
   padding: 12px;
   position: fixed;
-  right: 18px;
+  right: 41px;
   top: 16px;
   cursor: pointer;
   border: 1px solid #b3a7a7;
@@ -62,7 +62,7 @@ header label {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.555);
 }
 
- .toggle {
+ #menu {
   display: none;
 } 
 

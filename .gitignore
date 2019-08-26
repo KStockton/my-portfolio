@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/contact-form-api/.serverless
+jspm_packages
+/contact-form-api/secrets.json
+

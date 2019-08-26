@@ -1,3 +1,4 @@
+//positioning
 @mixin displayFlex($justC, $alignC, $alignI, $fdirection){
   display: flex;
   justify-content: $justC;
@@ -13,16 +14,62 @@ $input-width: 15rem;
 $input-bg-color: green;
 $input-fs-border: 1px solid gold;
 
+$link-txtdecoration: none;
+
 @mixin transition($time-motion){
   transition: $time-motion;
 }
 
+//images
+@mixin background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+//list
+@mixin listItems {
+  border: 2px solid black;
+  margin: 0rem 1rem;
+  padding: 0.3rem;
+  width: 4rem;
+  height: 58px;
+  background-color: rgba(0,0,0,0.8);
+  font-size: 40px;
+  text-align: center;
+  list-style-type: none;
+  
+  &:hover {
+    cursor: pointer;
+    color: #333;
+    background-color: white;
+  }
+}
+
+@mixin footer-corner-borders {
+
+  &::before {
+    top: -0.3rem;
+    bottom: -0.3rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  &::after {
+    left: -0.3rem;
+    right: -0.3rem;
+    top: 1rem;
+    bottom: 1rem;
+  }
+}
+
+// Main header animation
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 90%;
+    width: 100%;
   }
 }
 

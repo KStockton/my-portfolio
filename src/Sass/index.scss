@@ -1,9 +1,9 @@
 @import './variables';
-@import '../App/App';
-@import '../Home/Home';
-@import '../Nav/Nav';
-@import '../Portfolio/portfolio';
-@import '../Contact/contact';
+@import '../Components/Home/home';
+@import '../Components/Nav/Nav';
+@import '../Components/Portfolio/portfolio';
+@import '../Components/Contact/contact';
+@import '../Components/Footer/footer';
 
 
 
@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'PT', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

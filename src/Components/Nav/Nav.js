@@ -18,7 +18,10 @@ class Nav extends Component {
 
     return (
       <header>
-      <input type="checkbox" className="toggle" id="menu" value={this.state.checked} onClick={this.handleClick}/>
+        <input type="checkbox" 
+        id="menu" 
+        value={this.state.checked} 
+        onClick={this.handleClick}/>
         <label htmlFor="menu">
           <div className="bar top"></div>
           <div className="bar middle"></div>
@@ -27,19 +30,19 @@ class Nav extends Component {
         { checked ? <ul className="Home-nav">
         <NavLink to='/'>
           <li>
-          <i class="fas fa-home"></i>
+          <i className="fas fa-home"></i>
             Home
           </li>
         </NavLink>
          <NavLink to='/portfolio' className="nav">
             <li>
-            <i class="fas fa-briefcase"></i>
+            <i className="fas fa-briefcase"></i>
               Portfolio
             </li>
          </NavLink>
           <NavLink to='/contact' className="nav">
             <li>
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
               Contact
             </li>
           </NavLink>

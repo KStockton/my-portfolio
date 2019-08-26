@@ -11,18 +11,27 @@ const SignupSchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email')
     .required('Email Required'),
-  message: Yup.string()
+  content: Yup.string()
     .min(1, 'Too Short!')
     .required('Required')
 })
 
 const Contact = () => (
   <Formik
-    initialValues={{ name: '', email: '', message: '' }}
+    initialValues={{ name: 'michael', email: 'mic8000k@aol.com', content: 'I want to hire you' }}
     validationSchema={SignupSchema}
 
-    onSubmit={(values, actions) => {
-    
+    onSubmit={ async (values, actions) => {
+
+      const url = 'https://8aqpv0z2w3.execute-api.us-east-1.amazonaws.com/dev/email/send'
+      const options = {
+        method: "POST",
+        mode: "cors",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(values)
+      }
+      const response = await fetch(url, options);
+
     }}
 
     render={({
@@ -37,15 +46,14 @@ const Contact = () => (
     }) => (
       <div className='form-container'>
         <form onSubmit={handleSubmit} id='contact-form'>
-          <h3>Connect Now</h3>
-        {/* <img src={chat} alt='chat icon'/> */}
+          <h3>Get In Touch</h3>
           <input
             type='name'
             name='name'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.name}
-            placeholder='Name'
+            placeholder='Name*'
             />
           { errors.name && touched.name ? <div>{errors.name}</div> : <div/>}
           <input 
@@ -54,21 +62,21 @@ const Contact = () => (
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
-            placeholder='Enter Email'
+            placeholder='Enter Email*'
             />
           { errors.email && touched.email ? <div>{errors.email}</div> : <div/>}
           <Field
             component='textarea'
-            name='message'
+            name='content'
             onChange={handleChange}
             onBlur={handleBlur}
-            value={values.message}
-            placeholder='Enter Message'
+            value={values.content}
+            placeholder='Enter Message*'
             />
-          { errors.message && touched.message ? <div>{errors.message}</div> : <div/>}
+          { errors.content && touched.content ? <div>{errors.content}</div> : <div/>}
           { status && status.msg ? <div>{status.msg}</div> : <div/>}
             <button type='submit' disabled={isSubmitting}>
-              Submit
+              Send Email
             </button>
           </form>
       </div>
