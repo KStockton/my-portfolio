@@ -25,7 +25,8 @@ body {
   // background-image: url('../Images/Nm9Hoa.jpg'), linear-gradient( rgba(0, 0, 0, 0.842), rgba(20, 3, 3, 0.5) );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@media only screen and (max-width: 320px) {
+  html {
+    width: 116vw;
+  }
 }
