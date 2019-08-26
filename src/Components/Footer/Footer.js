@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { portfolioInfo } from '../../Util/Projects';
 const shortid = require('shortid');
 
@@ -19,12 +20,14 @@ const Footer = () => {
         </div>
       </section>
       <section>
-        <div>
-          <p>
-            <i className="fas fa-envelope"></i>
-            Contact Me
-          </p>
-        </div> 
+        <Link to='/contact'>
+          <div>
+            <p>
+              <i className="fas fa-envelope"></i>
+              Contact Me
+            </p>
+          </div> 
+        </Link>
       </section>
       <section>
         <h2>Activities</h2>
