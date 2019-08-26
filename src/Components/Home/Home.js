@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { portfolioInfo } from '../../Util/Projects';
 const shortid = require('shortid');
 
 const Home = () => {
+
+  const { actualPosition, setPosition } = useState('Home');
+
+  const determinePosition = () => {
+
+    window.addEventListener('scroll', () => {
+      
+    })
+  }
 
   return (
     <div>

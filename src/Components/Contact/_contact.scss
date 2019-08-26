@@ -22,7 +22,8 @@
       color: black;
       position: absolute;
       top: -48px;
-      font-size: 31px;;
+      font-size: 31px;
+      font-family: 'Arvo';
     }
 
     label {
@@ -31,19 +32,19 @@
 
     input, textarea {
       background: transparent;
-      border-radius: $input-border-radius;
       padding: $input-padding;
       width: $input-width;
       border: none;
       color: #ffffff;
       border-bottom: 2px solid #ffffff;
+      font-family: 'Arvo';
 
       &:focus {
         border: $input-fs-border;
         outline: none;
       }
       &::-webkit-input-placeholder {
-        color: grey;
+        color: #808080;
         @include transition(.3s ease-in);
         transform-origin: 0 50%;
       }
@@ -61,12 +62,14 @@
       text-align: left;
       color: #ffffff;
       text-transform: capitalize;
+      font-family: 'Arvo';
     }
 
     textarea {
+      font-family: 'Arvo';
+      height: 13rem;
       resize: none;
       width: 15rem;
-      height: 13rem;
 
       &:focus {
         border: $input-fs-border;
@@ -79,35 +82,36 @@
     }
 
     #messages {
-      font-size: 41px;
-      position: absolute;
-      background-color: #333333;
-      width: 246px;
+      background-color: #3a3a3a;
+      color: #ffffff;
+      font-family: 'Arvo';
+      font-size: 37px;
       height: 462px;
+      padding: 139px 10px;
+      position: absolute;
       text-align: center;
       top: 38px;
-      padding: 139px 10px;
+      width: 246px;
       animation: ease-in sentEmail 3s;
     }
 
-    button {
-      border: 2px solid black;
-      font-size: 16px;
-      width: 15rem;
-      height: 2.6rem;
+    #submit {
+      background-color: #ffffff;
       border-radius: 6px;
-      cursor: pointer;
-      background-color: white;
+      border: 2px solid black;
       color: #000000;
+      cursor: pointer;
+      font-family: 'Arvo';
+      font-size: 16px;
+      height: 2.6rem;
+      width: 15rem;
       
       &:hover  {
         background-color: #000000;
-        color: #ffffff;
         border: 2px solid #ffffff;
+        color: #ffffff;
       }
     }
-
-
   }
 }
 
@@ -119,4 +123,13 @@
     background-color: #333333; 
   }
 
+}
+
+@keyframes handleError {
+  from {
+    z-index: -1;
+  }
+  to {
+    z-index: 3;
+  }
 }

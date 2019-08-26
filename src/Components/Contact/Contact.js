@@ -22,7 +22,9 @@ const Contact = () => (
     validationSchema={SignupSchema}
 
     onSubmit={ async (values, actions) => {
+
       actions.setSubmitting(false);
+
       const url = 'https://8aqpv0z2w3.execute-api.us-east-1.amazonaws.com/dev/email/send';
       const options = {
         method: "POST",
@@ -30,10 +32,12 @@ const Contact = () => (
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(values)
       };
+
       const response = await fetch(url, options);
       if (response.status === 200) {
-        actions.resetForm();
         actions.setStatus({ success: "Email Sent" });
+      } else if (!response.ok) {
+        actions.setStatus({ error: 'There was an error sending your message please try again'});
       }
     }}
 
@@ -49,7 +53,7 @@ const Contact = () => (
     }) => (
       <div className='form-container'>
         <form onSubmit={handleSubmit} id='contact-form'>
-          <h3>Get In Touch</h3>
+          <h3>Get In Touch <i className="far fa-comment-dots"></i></h3>
           <input
             type='name'
             name='name'
@@ -81,54 +85,16 @@ const Contact = () => (
           { status && status.success && 
             <div id='messages'>{status.success}
               <i className="fas fa-check"></i>
-            </div>}
-          <button type='submit' disabled={isSubmitting}>
+            </div>
+          }
+          { status && status.error && <p id='failure'>{status.error}</p> }
+          <button type='submit' id='submit' disabled={isSubmitting}>
               Send Email
           </button>
         </form>
       </div>
     )}
   />
-    
-  
-
 );
 
 export default Contact;
-
-
-
-
-//  export default class Contact extends Component{
-//    constructor(){
-//      super()
-
-//      this.state ={
-//       name: '',
-//       email: '',
-//       message: ''
-//      }
-//    }
-
-//    handleChangle = (event) => {
-//      const { name, value } = event.target
-//      this.setState({[ name ]: value})
-//    }
-
-//    handleSubmit = (event) => {
-//     event.preventDefault()
-//     alert('hi')
-//    }
-// render() {
-
-//   return (
-//     <form onSubmit={this.handleSubmit}>
-//         <label for="name">Your Name</label>
-//         <input id="name" name="name" placeholder="name" onChange={this.handleChangle}/>
-//         <label for="email">Email</label>
-//         <input id="email" name="email" placeHolder="Enter Email" onChange={this.handleChange}/>
-//         <textarea name="message" id="message" type="text" onChange={this.handleChange}></textarea>
-//         <button>Submit</button>
-//       </form>
-//   )
-// }
