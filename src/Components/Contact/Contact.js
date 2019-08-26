@@ -18,11 +18,11 @@ const SignupSchema = Yup.object().shape({
 
 const Contact = () => (
   <Formik
-    initialValues={{ name: 'michael', email: 'mic8000k@aol.com', content: 'I want to hire you' }}
+    initialValues={{ name: '', email: '', content: '' }}
     validationSchema={SignupSchema}
 
     onSubmit={ async (values, actions) => {
-
+      actions.setSubmitting(false);
       const url = 'https://8aqpv0z2w3.execute-api.us-east-1.amazonaws.com/dev/email/send'
       const options = {
         method: "POST",
@@ -31,7 +31,10 @@ const Contact = () => (
         body: JSON.stringify(values)
       }
       const response = await fetch(url, options);
-
+      if (response.status === 200) {
+        actions.resetForm();
+        actions.setStatus({ success: "Email Sent" });
+      }
     }}
 
     render={({
@@ -75,6 +78,10 @@ const Contact = () => (
             />
           { errors.content && touched.content ? <div>{errors.content}</div> : <div/>}
           { status && status.msg ? <div>{status.msg}</div> : <div/>}
+          {status && status.success && 
+            <div id='messages'>{status.success}
+              <i className="fas fa-check"></i>
+            </div>}
             <button type='submit' disabled={isSubmitting}>
               Send Email
             </button>
