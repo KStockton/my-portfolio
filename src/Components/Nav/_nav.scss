@@ -22,12 +22,12 @@
     border-radius: 2px;
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.555);
-    background-color: #fff;
+    background-color: #ffffff;
     margin-left: 3px;
 
     &:hover {
       background-image: linear-gradient(to right,  rgb(97, 153, 228), rgba(0, 0, 0, 0.39));
-      border: 1px solid gold;
+      border: 1px solid #ffd700;
       color: white;
       cursor: pointer;
     }

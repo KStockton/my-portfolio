@@ -19,7 +19,10 @@
 
 
     h3 {
-      color: white;
+      color: black;
+      position: absolute;
+      top: -48px;
+      font-size: 31px;;
     }
 
     label {
@@ -32,8 +35,8 @@
       padding: $input-padding;
       width: $input-width;
       border: none;
-      color: #fff;
-      border-bottom: 2px solid #fff;
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
 
       &:focus {
         border: $input-fs-border;
@@ -56,7 +59,7 @@
       padding: 12px;
       font-size: 16px;
       text-align: left;
-      color: white;
+      color: #ffffff;
       text-transform: capitalize;
     }
 
@@ -72,15 +75,50 @@
     }
 
     .fa-check {
-      color: green;
+      color: #008000;
+    }
+
+    #messages {
+      font-size: 41px;
+      position: absolute;
+      background-color: #333333;
+      width: 246px;
+      height: 423px;
+      text-align: center;
+      top: 38px;
+      padding: 139px 10px;
+      animation: ease-in sentEmail 3s;
     }
 
     button {
-      border: $input-border;
+      border: 2px solid black;
       font-size: 16px;
       width: 15rem;
       height: 2.6rem;
       border-radius: 6px;
+      cursor: pointer;
+      background-color: white;
+      color: #000000;
+      position: relative;
+      z-index: 1;
+      
+      &:hover  {
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+      }
     }
+
+
   }
+}
+
+@keyframes sentEmail {
+  from { 
+    background-color: #333333;
+  }
+  to {
+    background-color: #333333; 
+  }
+
 }
