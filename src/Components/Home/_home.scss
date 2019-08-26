@@ -42,7 +42,7 @@ main header {
     display: grid;
     grid-gap: 40px;
     align-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(520px,2fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,2fr));
     margin: calc(10px + 2%);
 
     a {
@@ -54,7 +54,7 @@ main header {
       width: 100%;
       height: 200px;
       position: relative;
-      color: black;
+      color: #000000;
       padding: 2rem;
       text-align: left;
       cursor: pointer;
@@ -64,7 +64,7 @@ main header {
         display: block;
         width: 100%;
         height: 100%;
-        background-color: #333;
+        background-color: #333333;
         position: absolute;
         top: 0;
         left: 0;
@@ -157,7 +157,7 @@ main header {
         bottom: 0;
         right: 0;
         left: -1rem;
-        background: #fff;
+        background: #ffffff;
         z-index: -1;
         transform: scaleY(0);
         transition: transform 250ms ease-in 250ms;
@@ -166,7 +166,7 @@ main header {
     }
 
     article:hover p {
-      color: #333;
+      color: #333333;
     }
 
     article:hover p::after {

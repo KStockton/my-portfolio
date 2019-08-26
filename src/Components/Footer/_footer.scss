@@ -14,9 +14,9 @@ footer {
       text-align: right;
       color: #ffffff;
       z-index: 1;
-      padding-right: 3px;
+      padding: 3px;
       text-transform: lowercase;
-      font-size: vw;
+      font-size: 18px;
       
       &::before {
         position: absolute;
@@ -40,7 +40,7 @@ footer {
         color: black;
         text-transform: lowercase;
         text-align: left;
-        font-size: 1.3vw;
+        font-size: 17px;
         font-family: 'PT';
         z-index: 2;
       }
@@ -83,7 +83,7 @@ footer {
   section:nth-child(3) {
     @include displayFlex(center, center, center, column);
     grid-column: 3;
-    grid-row: 1 ;
+    grid-row: 1;
     position: relative;
     border: 1px solid #333;
     height: 100%;
@@ -123,7 +123,7 @@ footer {
       }
 
       li:nth-child(3) {
-        color: rgb(164, 78, 74);
+        color: rgb(255, 0, 0);
       }
 
       li:nth-child(5) {
@@ -137,6 +137,33 @@ footer {
       li:nth-child(7) {
         color: rgb(0, 128, 0);
       }
+
+      li:nth-child(8) {
+        color: rgb(164, 78, 74);
+      }
     }
   }
+}
+
+@media only screen and (max-width: 1129px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  
+
+  section:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  section:nth-child(2){
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  section:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
 }
