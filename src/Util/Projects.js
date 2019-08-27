@@ -6,12 +6,12 @@ export const portfolioInfo =
     {
       link: 'https://github.com/KStockton/Vue.js-Synonyms-v1',
       name: 'Synonyms',
-      description: 'A Thesaurus'
+      description: 'A Thesaurus in Vue'
     }, 
     {
       link: 'https://github.com/KStockton/Trapper-Keeper',
       name: 'Trapper Keeper',
-      description: 'Keep up with Todo List'
+      description: 'Create notes and list with Trapper Keeper'
     }, 
     {
       link: 'https://github.com/KStockton/Newswired',
@@ -21,7 +21,7 @@ export const portfolioInfo =
     {
       link: 'https://github.com/KStockton/pocket_ramiro_react',
       name: 'Pocket Ramiro',
-      description: 'Manage Facility Equipment'
+      description: 'Track issues and tickets for Facility Equipment'
     }, 
     {
       link: 'https://github.com/KStockton/Movie-Tracker',
