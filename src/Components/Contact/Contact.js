@@ -51,7 +51,7 @@ const Contact = () => (
       handleSubmit,
       isSubmitting
     }) => (
-      <div className='form-container'>
+      <div className='form-container' id='forms'>
         <form onSubmit={handleSubmit} id='contact-form'>
           <h3>Get In Touch <i className="far fa-comment-dots"></i></h3>
           <input

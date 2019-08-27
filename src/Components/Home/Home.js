@@ -1,17 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Footer from '../Footer/Footer';
 import { portfolioInfo } from '../../Util/Projects';
 const shortid = require('shortid');
 
 const Home = () => {
-
-  const { actualPosition, setPosition } = useState('Home');
-
-  const determinePosition = () => {
-
-    window.addEventListener('scroll', () => {
-      
-    })
-  }
 
   return (
     <div>
@@ -28,10 +20,10 @@ const Home = () => {
             </a>
           )}
         </ul>
-        <section>
-          { portfolioInfo.projects.map(project => 
+        <section >
+          { portfolioInfo.projects.map((project, index) => 
             <a href={ project.link } key={shortid.generate()}>
-              <article>
+              <article id={`projects${index}`}>
                 <h3 className='card-title'>
                   { project.name }
                 </h3>
@@ -41,6 +33,7 @@ const Home = () => {
           )}
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };

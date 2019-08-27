@@ -27,26 +27,27 @@ class Nav extends Component {
           <div className="bar middle"></div>
           <div className="bar bottom"></div>
         </label>
-        { checked ? <ul className="Home-nav">
-          <NavLink to='/'>
-            <li>
-              <i className="fas fa-home"></i>
-            Home
-            </li>
-          </NavLink>
-          <NavLink to='/portfolio' className="nav">
-            <li>
-              <i className="fas fa-briefcase"></i>
-              Portfolio
-            </li>
-          </NavLink>
-          <NavLink to='/contact' className="nav">
-            <li>
-              <i className="fas fa-envelope"></i>
-              Contact
-            </li>
-          </NavLink>
-        </ul> : null }
+        { checked ? 
+          <ul className="Home-nav">
+            <NavLink to='/'>
+              <li>
+                <i className="fas fa-home"></i>
+                Home
+              </li>
+            </NavLink>
+            <NavLink to='/home/#projects4' className="nav">
+              <li>
+                <i className="fas fa-briefcase"></i>
+                Portfolio
+              </li>
+            </NavLink>
+            <NavLink to='/contact' className="nav">
+              <li>
+                <i className="fas fa-envelope"></i>
+                Contact
+              </li>
+            </NavLink>
+          </ul> : null }
       </header>
     );
   }
