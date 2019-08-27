@@ -35,7 +35,7 @@ class Nav extends Component {
                 Home
               </li>
             </NavLink>
-            <NavLink to='/home/#projects4' className="nav">
+            <NavLink to='/#website-info' className="nav">
               <li>
                 <i className="fas fa-briefcase"></i>
                 Portfolio
