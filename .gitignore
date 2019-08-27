@@ -10,6 +10,8 @@
 
 # production
 /build
+contact-form-api
+/contact-form-api
 
 # misc
 .DS_Store
@@ -25,5 +27,4 @@ yarn-error.log*
 /contact-form-api/.serverless
 jspm_packages
 /contact-form-api/secrets.json
-/contact-form-api
 
