@@ -4,8 +4,8 @@ const Portfolio = () => {
 
   return (
     <section>
-      <h1>Portfolio</h1>
-      <h3>GitHub</h3>
+      <h1>Bio</h1>
+      <p></p>
     </section>
   );
 };

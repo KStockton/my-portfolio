@@ -1,9 +1,7 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch  } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
-import Footer from '../Footer/Footer';
-// import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 
 const App = () => {
@@ -13,7 +11,7 @@ const App = () => {
       <Nav/>
       <Switch>
         <Route exact path='/' component={Home}/>
-        <Route exact path="/contact" component={Contact}/>
+        <Route  path="/contact" component={Contact}/>
       </Switch>
     </div>
   );

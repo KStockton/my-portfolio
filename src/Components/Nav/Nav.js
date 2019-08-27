@@ -35,12 +35,12 @@ class Nav extends Component {
                 Home
               </li>
             </NavLink>
-            <NavLink to='/#website-info' className="nav">
+            {/* <NavLink to='/bio' className="nav">
               <li>
                 <i className="fas fa-briefcase"></i>
                 Portfolio
               </li>
-            </NavLink>
+            </NavLink> */}
             <NavLink to='/contact' className="nav">
               <li>
                 <i className="fas fa-envelope"></i>
