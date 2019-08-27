@@ -1,4 +1,5 @@
-import resume from '../assets/Michael_King-Stockton_Resume.pdf';
+import resumePDF from '../assets/Michael_King-Stockton_Resume.pdf';
+import resumeWord from '../assets/MichaelKS_Resume_2019.docx';
 
 export const portfolioInfo = 
 { 
@@ -78,8 +79,12 @@ export const portfolioInfo =
       classname: 'fab fa-linkedin-in'
     },
     {
-      link: `${resume}`,
+      link: `${resumePDF}`,
       classname: 'far fa-file-pdf'
+    },
+    {
+      link: `${resumeWord}`,
+      classname: 'far fa-file-word'
     }
   ]
 };
