@@ -16,7 +16,7 @@ footer {
       z-index: 1;
       padding: 3px;
       text-transform: lowercase;
-      font-size: 18px;
+      font-size: 20px;
       
       &::before {
         position: absolute;
@@ -40,7 +40,7 @@ footer {
         color: black;
         text-transform: lowercase;
         text-align: left;
-        font-size: 17px;
+        font-size: 18px;
         font-family: 'PT';
         z-index: 2;
       }
@@ -116,7 +116,7 @@ footer {
       grid-template-columns: repeat(4, 75px);
       grid-gap: 10px;
       margin: 10px;
-      padding: 18px 25px 22px 0px;
+      padding: 0px 0px 7px 0px;
 
       li {
         pointer-events: none;
@@ -152,25 +152,35 @@ footer {
   }
 }
 
-#website-info {
+aside {
   
   p {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   ul {
     display: grid;
-    grid-template-columns: repeat(4, 75px);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-gap: 10px;
-    padding: 18px 25px 22px 0px;
+    padding: 15px;
     align-items: center;
     justify-content: center;
     list-style-type: none;
 
-      img {
+      li:nth-child(4) img {
         height: 72px;
         width: 85px;
+      }
+
+      li:nth-child(5) img {
+        height: 61px;
+        width: 61px;
+      }
+
+      li:nth-child(6) img {
+        height: 67px;
+        width: 72px;
       }
 
       li {

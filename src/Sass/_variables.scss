@@ -30,9 +30,7 @@ $link-txtdecoration: none;
 //list
 @mixin listItems {
   border: 2px solid black;
-  margin: 0rem 1rem;
   padding: 0.3rem;
-  width: 4rem;
   height: 58px;
   background-color: rgba(0,0,0,0.8);
   font-size: 40px;

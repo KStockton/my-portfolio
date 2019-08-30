@@ -22,14 +22,15 @@ const Home = () => {
         </ul>
         <section >
           { portfolioInfo.projects.map((project, index) => 
-            <a href={ project.link } key={shortid.generate()}>
-              <article id={`projects${index}`}>
-                <h3 className='card-title'>
-                  { project.name }
-                </h3>
-                <p>{ project.description }</p>
-              </article>
-            </a>
+            <article id={`projects${index}`}>
+              <h3 className='card-title'>
+                { project.name }
+              </h3>
+              <p>{ project.description }</p>
+              <a href={ project.link } key={shortid.generate()}>
+                <i className='fab fa-github'></i>
+              </a>
+            </article>
           )}
         </section>
       </main>
