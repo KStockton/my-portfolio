@@ -82,17 +82,19 @@
     }
 
     #messages {
-      background-color: #3a3a3a;
+      background-color: rgba(0, 0, 0, 1);
       color: #ffffff;
       font-family: 'Arvo';
       font-size: 37px;
-      height: 462px;
-      padding: 139px 10px;
+      height: 500px;
+      padding: 185px 36px;
       position: absolute;
       text-align: center;
-      top: 38px;
-      width: 246px;
+      top: 0px;
+      width: calc(109% - 36px);
       animation: ease-in sentEmail 3s;
+      min-width: 300px;
+      border-radius: 5px;
     }
 
     #submit {

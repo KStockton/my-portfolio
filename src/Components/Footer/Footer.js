@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import formik from '../../assets/formik.png';
+import awsLambda from '../../assets/awsLambda.png';
+import awsgateway from '../../assets/awsgateway.png';
 import { portfolioInfo } from '../../Util/Projects';
 const shortid = require('shortid');
 
@@ -13,16 +15,18 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <p>
-          Born and raised in Denver, Colorado.
-          I am a Software Engineer who loves the never ending challenge between art, analysis,
-          creativity, and code. I am seeking a software engineering position on an agile team that
-          blends the never-ending challenge of complex problem solving with
-          open minded curiosity.
+            {/* born and raised in denver, colorado. I have a background in chemistry andc */}
+            {/* have been an entrpreneur sourcing private label items and selling them on Amazon.  */}
+            
+            i am a software engineer who loves the never-ending challenge between art, 
+            analysis, creativity, and code. i am seeking a software engineering position on 
+            an agile team that blends the never-ending challenge of complex problem solving 
+            with open-minded curiosity.
             </p>
           </div>
         </section>
         <section>
-          <Link to='/contact/#forms'>
+          <Link to='/contact'>
             <div>
               <p>
                 <i className="fas fa-envelope"></i>
@@ -42,7 +46,7 @@ const Footer = () => {
           </ul>
         </section>
       </footer>
-      <section id='website-info'>
+      <aside>
         <p>This page was built and deployed with:</p>
         <ul> 
           <li>
@@ -57,8 +61,14 @@ const Footer = () => {
           <li>
             <img src={formik} alt='formik-logo'/>
           </li>
+          <li>
+            <img src={awsLambda} alt='aws lambda icon'/>
+          </li>
+          <li>
+            <img src={awsgateway} alt='aws gateway api icon'/>
+          </li>
         </ul>
-      </section>
+      </aside>
     </div>
   );
 };
