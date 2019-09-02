@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <main>
         <header className='name-title'>
-          <h1>Michael King<span>-</span>Stockton</h1>
+          <h1>Michael King-Stockton</h1>
         </header>
         <ul>
           { portfolioInfo.resourceLinks.map(item =>
