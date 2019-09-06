@@ -24,7 +24,7 @@ export const portfolioInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/pocket_ramiro_react',
-      liveLink: 'https://pocket-ramiro-react.herokuapp.com/',
+      liveLink: '',
       name: 'Pocket Ramiro',
       description: 'Track issues and tickets for Facility Equipment'
     }, 

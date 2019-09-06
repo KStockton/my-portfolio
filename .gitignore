@@ -4,13 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.env
 # testing
 /coverage
 
 # production
 /build
-
+/contact-form-api
 # misc
 .DS_Store
 .env.local
@@ -25,4 +25,3 @@ yarn-error.log*
 /contact-form-api/.serverless
 jspm_packages
 /contact-form-api/secrets.json
-contact-form-api

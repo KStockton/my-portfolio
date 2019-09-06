@@ -25,7 +25,7 @@ const Contact = () => (
 
       actions.setSubmitting(false);
 
-      const url = 'https://8aqpv0z2w3.execute-api.us-east-1.amazonaws.com/dev/email/send';
+      const url = `${process.env.REACT_APP_BASEURL}.amazonaws.com/dev/email/send`;
       const options = {
         method: "POST",
         mode: "cors",
