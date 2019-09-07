@@ -22,7 +22,7 @@ const Home = () => {
         </ul>
         <section >
           { portfolioInfo.projects.map((project, index) => 
-            <article id={`projects${index}`}>
+            <article id={`projects${index}`} key={shortid.generate()}>
               <h3 className='card-title'>
                 { project.name }
               </h3>
