@@ -50,13 +50,13 @@ const Footer = () => {
         <p>This page was built and deployed with:</p>
         <ul> 
           <li>
-            <i class="fab fa-aws"></i>
+            <i className="fab fa-aws"></i>
           </li>   
           <li>
-            <i class="fab fa-react"></i>
+            <i className="fab fa-react"></i>
           </li>
           <li>
-            <i class="fab fa-sass"></i>
+            <i className="fab fa-sass"></i>
           </li>
           <li>
             <img src={formik} alt='formik-logo'/>
