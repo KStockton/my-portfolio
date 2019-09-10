@@ -73,27 +73,44 @@
       }
     }
 
-    .fa-check {
+    .fa-check, .fa-exclamation-triangle {
       display: block;
-      color: #008000;
     }
 
-    #messages {
+    .fa-check {
+      color: #008000;
+      margin-top: 30px;
+    }
+
+    .fa-exclamation-triangle {
+      color: #ff0000;
+      font-size: 50px;
+      margin-top: 48px;
+    }
+
+    .response-message {
       background-color: rgba(51, 51, 51, 1);
       color: #ffffff;
-      font-family: 'Arvo';
-      font-size: 37px;
       height: 500px;
-      padding: 185px 36px;
       position: absolute;
-      text-align: center;
       top: 0px;
       width: calc(109% - 36px);
       min-width: 300px;
       border-radius: 5px;
+      text-align: center;
     }
 
-    button[type="submit"] {
+    #success-message {
+      font-size: 37px;
+      padding: 185px 36px;
+    }
+
+    #failure-message {
+      font-size: 23px;
+      padding: 185px 23px
+    }
+
+    button[type='submit'] {
       background-color: #ffffff;
       border-radius: 6px;
       border: 1px solid black;
@@ -110,6 +127,7 @@
         color: #ffffff;
       }
     }
+    
     button[type='reset'] {
       background: none;
       color: white;
@@ -123,16 +141,6 @@
         transform: scale(1.2);
       }
     }
-  }
-}
-
-
-@keyframes handleError {
-  from {
-    z-index: -1;
-  }
-  to {
-    z-index: 3;
   }
 }
 

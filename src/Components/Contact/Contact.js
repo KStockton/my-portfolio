@@ -25,7 +25,7 @@ const Contact = () => (
 
       actions.setSubmitting(false);
 
-      const url = `${process.env.REACT_APP_BASEURL}.amazonaws.com/dev/emaijhl/send`;
+      const url = `${process.env.REACT_APP_BASEURL}.amazonaws.com/dev/email/send`;
       const options = {
         method: "POST",
         mode: "cors",
@@ -34,10 +34,11 @@ const Contact = () => (
       };
 
       const response = await fetch(url, options);
+      
       if (response.status === 200) {
         actions.setStatus({ success: "Email Sent" });
-      } else if (!response.ok) {
-        actions.setStatus({ error: 'There was an error sending your message please try again'});
+      } else if (response.status >= 400) {
+        actions.setStatus({ error: 'There was an error sending your email please try again'});
       }
     }}
 
@@ -85,11 +86,15 @@ const Contact = () => (
           { status && status.msg ? <div>{status.msg}</div> : <div/> }
           { 
             status && status.success && 
-            <div id='messages'>{status.success}
+            <p  className='response-message' id='success-message'>{status.success}
               <i className="fas fa-check"></i>
-            </div>
+            </p>
           }
-          { status && status.error && <p id='failure'>{status.error}</p> }
+          { 
+            status && status.error && 
+            <p  className='response-message' id='failure-message'>{status.error}
+              <i className='fas fa-exclamation-triangle'></i>
+            </p> }
           <button type='submit' disabled={isSubmitting}>
               Send Email
           </button>
