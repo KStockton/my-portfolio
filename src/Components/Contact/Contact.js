@@ -21,11 +21,11 @@ const Contact = () => (
     initialValues={{ name: '', email: '', content: '' }}
     validationSchema={SignupSchema}
 
-    onSubmit={ async (values, actions) => {
+    onSubmit ={ async (values, actions) => {
 
       actions.setSubmitting(false);
 
-      const url = `${process.env.REACT_APP_BASEURL}.amazonaws.com/dev/email/send`;
+      const url = `${process.env.REACT_APP_BASEURL}.amazonaws.com/dev/emaijhl/send`;
       const options = {
         method: "POST",
         mode: "cors",
@@ -49,7 +49,8 @@ const Contact = () => (
       values,
       handleBlur,
       handleSubmit,
-      isSubmitting
+      isSubmitting,
+      handleReset
     }) => (
       <div className='form-container' id='forms'>
         <form onSubmit={handleSubmit} id='contact-form'>
@@ -81,16 +82,18 @@ const Contact = () => (
             placeholder='Enter Message*'
           />
           { errors.content && touched.content ? <div>{errors.content}</div> : <div/>}
-          { status && status.msg ? <div>{status.msg}</div> : <div/>}
-          { status && status.success && 
+          { status && status.msg ? <div>{status.msg}</div> : <div/> }
+          { 
+            status && status.success && 
             <div id='messages'>{status.success}
               <i className="fas fa-check"></i>
             </div>
           }
           { status && status.error && <p id='failure'>{status.error}</p> }
-          <button type='submit' id='submit' disabled={isSubmitting}>
+          <button type='submit' disabled={isSubmitting}>
               Send Email
           </button>
+          <button type='reset' onClick={handleReset}>Reset</button>
         </form>
       </div>
     )}
