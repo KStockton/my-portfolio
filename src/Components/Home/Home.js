@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import { portfolioInfo } from '../../Util/Projects';
+import { webpageInfo } from '../../Util/webpageInfo';
 const shortid = require('shortid');
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
           <h1>Michael King-Stockton</h1>
         </header>
         <ul>
-          { portfolioInfo.resourceLinks.map(item =>
+          { webpageInfo.resourceLinks.map(item =>
             <a href={item.link} key={shortid.generate()}>
               <li>
                 <i className={item.classname}></i>
@@ -21,7 +21,7 @@ const Home = () => {
           )}
         </ul>
         <section >
-          { portfolioInfo.projects.map((project, index) => 
+          { webpageInfo.projects.map((project, index) => 
             <article id={`projects${index}`} key={shortid.generate()}>
               <h3 className='card-title'>
                 { project.name }
