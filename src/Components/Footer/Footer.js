@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import formik from '../../assets/formik.png';
 import awsLambda from '../../assets/awsLambda.png';
 import awsgateway from '../../assets/awsgateway.png';
-import { portfolioInfo } from '../../Util/Projects';
+import { webpageInfo } from '../../Util/webpageInfo';
 const shortid = require('shortid');
 
 const Footer = () => {
@@ -38,7 +38,7 @@ const Footer = () => {
         <section>
           <h2>Activities</h2>
           <ul>
-            { portfolioInfo.activities.map(activity =>
+            { webpageInfo.activities.map(activity =>
               <li key={shortid.generate()}>
                 <i className={activity.classname}></i>
               </li>

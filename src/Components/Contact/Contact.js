@@ -21,7 +21,7 @@ const Contact = () => (
     initialValues={{ name: '', email: '', content: '' }}
     validationSchema={SignupSchema}
 
-    onSubmit={ async (values, actions) => {
+    onSubmit ={ async (values, actions) => {
 
       actions.setSubmitting(false);
 
@@ -34,10 +34,11 @@ const Contact = () => (
       };
 
       const response = await fetch(url, options);
+      
       if (response.status === 200) {
         actions.setStatus({ success: "Email Sent" });
-      } else if (!response.ok) {
-        actions.setStatus({ error: 'There was an error sending your message please try again'});
+      } else if (response.status >= 400) {
+        actions.setStatus({ error: 'There was an error sending your email please try again'});
       }
     }}
 
@@ -49,7 +50,8 @@ const Contact = () => (
       values,
       handleBlur,
       handleSubmit,
-      isSubmitting
+      isSubmitting,
+      handleReset
     }) => (
       <div className='form-container' id='forms'>
         <form onSubmit={handleSubmit} id='contact-form'>
@@ -81,16 +83,22 @@ const Contact = () => (
             placeholder='Enter Message*'
           />
           { errors.content && touched.content ? <div>{errors.content}</div> : <div/>}
-          { status && status.msg ? <div>{status.msg}</div> : <div/>}
-          { status && status.success && 
-            <div id='messages'>{status.success}
+          { status && status.msg ? <div>{status.msg}</div> : <div/> }
+          { 
+            status && status.success && 
+            <p  className='response-message' id='success-message'>{status.success}
               <i className="fas fa-check"></i>
-            </div>
+            </p>
           }
-          { status && status.error && <p id='failure'>{status.error}</p> }
-          <button type='submit' id='submit' disabled={isSubmitting}>
+          { 
+            status && status.error && 
+            <p  className='response-message' id='failure-message'>{status.error}
+              <i className='fas fa-exclamation-triangle'></i>
+            </p> }
+          <button type='submit' disabled={isSubmitting}>
               Send Email
           </button>
+          <button type='reset' onClick={handleReset}>Reset</button>
         </form>
       </div>
     )}

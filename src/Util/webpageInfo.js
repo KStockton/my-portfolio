@@ -1,7 +1,7 @@
 import resumePDF from '../assets/Michael_King-Stockton_Resume.pdf';
 import resumeWord from '../assets/MichaelKS_Resume_2019.docx';
 
-export const portfolioInfo = 
+export const webpageInfo = 
 { 
   projects: [
     {
@@ -93,7 +93,11 @@ export const portfolioInfo =
     {
       link: `${resumeWord}`,
       classname: 'far fa-file-word'
-    }
+    },
+    {
+      link: 'https://github.com/KStockton/my-portfolio/',
+      classname: 'fas fa-code'
+    },
   ]
 };
 
