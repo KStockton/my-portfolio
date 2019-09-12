@@ -15,13 +15,12 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <p>
-            {/* born and raised in denver, colorado. I have a background in chemistry andc */}
-            {/* have been an entrpreneur sourcing private label items and selling them on Amazon.  */}
-            
-            i am a software engineer who loves the never-ending challenge between art, 
+            Born and raised in Denver, Colorado. I am recent graduate from Turing School of Software and Design.
+            I have a passion for software engineer because I enjoy the never-ending challenge between art, 
             analysis, creativity, and code. i am seeking a software engineering position on 
             an agile team that blends the never-ending challenge of complex problem solving 
-            with open-minded curiosity.
+            with open-minded curiosity. My background ranges from a bachleors in Chemistry to Door to Door sells.
+            During my freetime I enjoy mentoring kids at Big Brother Big Sister or volunteering with my local community.
             </p>
           </div>
         </section>
