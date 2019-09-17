@@ -15,12 +15,13 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <p>
-            Born and raised in Denver, Colorado. I am recent graduate from Turing School of Software and Design.
+            I am a Denver, Colorado Native and recent graduate from Turing School of Software and Design.
             I have a passion for software engineer because I enjoy the never-ending challenge between art, 
             analysis, creativity, and code. i am seeking a software engineering position on 
             an agile team that blends the never-ending challenge of complex problem solving 
-            with open-minded curiosity. My background ranges from a bachleors in Chemistry to Door to Door sells.
-            During my freetime I enjoy mentoring kids at Big Brother Big Sister or volunteering with my local community.
+            with open-minded curiosity. My background ranges from a BS in Chemistry, UPS, Customer Service to Door to Door sells.
+            For the past 8 years I have been a mentor with kids in Big Brother Big Sister. Other times I enjoy hiking, movies, basketball, football,
+            reading to name a few. Thanks for visiting!
             </p>
           </div>
         </section>
