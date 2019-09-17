@@ -79,3 +79,12 @@ $link-txtdecoration: none;
     border-right-color: transparent;
   }
 }
+
+@keyframes flipCard {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
