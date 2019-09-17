@@ -1,5 +1,6 @@
-import resumePDF from '../assets/Michael_King-Stockton_Resume.pdf';
-import resumeWord from '../assets/MichaelKS_Resume_2019.docx';
+import resumePDF from '../assets/MichaelKS_Resume_2019.pdf';
+// import resumeWord from '../assets/MichaelKS_Resume_2019.docx';
+
 
 export const webpageInfo = 
 { 
@@ -90,10 +91,11 @@ export const webpageInfo =
       link: `${resumePDF}`,
       classname: 'far fa-file-pdf'
     },
-    {
-      link: `${resumeWord}`,
-      classname: 'far fa-file-word'
-    },
+    //Need to update with new word resume and fix strange formating
+    // {
+    //   link: `${resumeWord}`,
+    //   classname: 'far fa-file-word'
+    // },
     {
       link: 'https://github.com/KStockton/my-portfolio/',
       classname: 'fas fa-code'
