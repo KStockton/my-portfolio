@@ -19,13 +19,13 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/Newswired',
-      liveLink: 'https://kstockton.github.io/Newswired',
+      liveLink: 'https://news-wired.herokuapp.com/',
       name: 'News Wired',
       description: 'Keep up with the latest news'
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/pocket_ramiro_react',
-      liveLink: '',
+      liveLink: 'https://pocket-ramiro-react.herokuapp.com/',
       name: 'Pocket Ramiro',
       description: 'Track issues and tickets for Facility Equipment'
     }, 
