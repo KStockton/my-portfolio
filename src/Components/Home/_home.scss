@@ -1,7 +1,7 @@
 main header {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-rows: repeat(auto-fit,minmax(185px,1fr));
+    grid-template-rows: repeat(auto-fit, minmax(185px,1fr));
     padding: 12rem 0rem;
 
     h1 {

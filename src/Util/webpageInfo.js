@@ -43,7 +43,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/Build-Your-Own-Backend',
-      liveLink: 'https://trapper-keeper-front.herokuapp.com/',
+      liveLink: 'https://nbadraft2019.herokuapp.com/',
       name: 'Backend NBA Draft 2019',
       description: 'NBA Draft Players and Teams in Express'
     }, 
