@@ -49,7 +49,6 @@ footer {
 
   section:nth-child(2) {
     background-color: #333;
-    cursor: pointer;
     
     a {
       display: flex;
@@ -58,6 +57,11 @@ footer {
       height: 100%;
       width: 100%;
       text-decoration: none;
+      
+      &:hover > * {
+        cursor: pointer;
+        border: 3px solid gold;
+      }
     }
     
     div {
@@ -80,6 +84,7 @@ footer {
         font-size: 24px;
         color: #ffffff;
         z-index: 2;
+        cursor: pointer;
         
         i {
           padding-right: 8px;

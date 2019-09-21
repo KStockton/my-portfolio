@@ -41,7 +41,7 @@ const Home = () => {
                 {/* <button hidden onClick={() => setSelected(true)}>Tech Stack</button>
           {selected ? <p >More Details</p> : <p>false</p>} */}
                 <a href={ project.liveLink }>
-                  <li>
+                  <li className='live'>
                     <h4>Live</h4>
                   </li>
                 </a>

@@ -169,6 +169,7 @@ main header {
 
     article:hover p {
       color: #333333;
+      cursor: pointer;
     }
 
     article:hover p::after {
@@ -195,18 +196,20 @@ main header {
         margin: 0rem; 
         color: #ffffff;
         border-right: 2px solid #ffffff;
+        position: relative;
+        z-index: 4;
         
         &:hover {
-          cursor: pointer;
           color: #333333;
           background-color: #ffffff;
           font-weight: 900;
+          cursor: pointer;
         }
+      }
 
-        h4 {
-          font-family: 'PT', sans-serif;
-          font-weight: 600;
-        }
+      h4 {
+        font-family: 'PT', sans-serif;
+        font-weight: 600;
       }
     }
   }
