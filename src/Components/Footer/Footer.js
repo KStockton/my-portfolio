@@ -14,15 +14,18 @@ const Footer = () => {
         <section className='one'>
           <h2>About Me</h2>
           <div>
-            <p>
-            I am a Denver, Colorado Native and recent graduate from Turing School of Software and Design.
-            I have a passion for software engineer because I enjoy the never-ending challenge between art, 
-            analysis, creativity, and code. i am seeking a software engineering position on 
-            an agile team that blends the never-ending challenge of complex problem solving 
-            with open-minded curiosity. My background ranges from a BS in Chemistry, UPS, Customer Service to Door to Door sells.
-            For the past 8 years I have been a mentor with kids in Big Brother Big Sister. Other times I enjoy hiking, movies, basketball, football,
-            reading to name a few. Thanks for visiting!
-            </p>
+            <blockquote>
+              I am a Denver, Colorado Native, and recent graduate from Turing 
+              School of Software and Design. I have a passion for software 
+              engineer because I enjoy the never-ending challenge between art, 
+              analysis, creativity, and code. <br></br> I am seeking a software engineering 
+              position on an agile team that blends the never-ending challenge of 
+              complex problem solving with open-minded curiosity. My background 
+              ranges from a BS in Chemistry, UPS, Customer Service to Door to 
+              Door sells. For the past 8 years, I have been a mentor with kids 
+              in Big Brother Big Sister. Other times I enjoy hiking, movies, 
+              basketball, football, reading, to name a few. Thanks for visiting!
+            </blockquote>
           </div>
         </section>
         <section>
