@@ -5,29 +5,33 @@ class Nav extends Component {
   constructor() {
     super();
     this.state = {
-      checked: false
+      isChecked: false
     };
   }
 
-  handleClick = () => {
-    this.setState({checked: !this.state.checked});
+  handleChange = (event) => {
+    const { checked } = event.target;
+
+    this.setState({isChecked: checked });
   }
   
   render() {
-    const { checked } = this.state;
+    const { isChecked } = this.state;
 
     return (
       <header>
-        <input type="checkbox" 
+        <input 
+          type="checkbox"
           id="menu" 
-          value={this.state.checked} 
-          onClick={this.handleClick}/>
+          checked={this.state.isChecked}
+          value={this.state.isChecked} 
+          onChange={this.handleChange}/>
         <label htmlFor="menu">
           <div className="bar top"></div>
           <div className="bar middle"></div>
           <div className="bar bottom"></div>
         </label>
-        { checked ? 
+        { (isChecked) ? 
           <ul className="Home-nav">
             <NavLink to='/'>
               <li>
@@ -35,12 +39,6 @@ class Nav extends Component {
                 Home
               </li>
             </NavLink>
-            {/* <NavLink to='/bio' className="nav">
-              <li>
-                <i className="fas fa-briefcase"></i>
-                Portfolio
-              </li>
-            </NavLink> */}
             <NavLink to='/contact' className="nav">
               <li>
                 <i className="fas fa-envelope"></i>
