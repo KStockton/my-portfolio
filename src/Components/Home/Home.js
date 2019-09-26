@@ -5,7 +5,7 @@ const shortid = require('shortid');
 
 const Home = () => {
 
-  const [ selected, setSelected ] = useState(false);
+  // const [ selected, setSelected ] = useState(false);
 
 
 
