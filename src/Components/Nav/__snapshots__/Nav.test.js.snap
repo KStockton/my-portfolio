@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should match the snapshot 1`] = `
+<header>
+  <input
+    checked={false}
+    id="menu"
+    onChange={[Function]}
+    type="checkbox"
+    value={false}
+  />
+  <label
+    htmlFor="menu"
+  >
+    <div
+      className="bar top"
+    />
+    <div
+      className="bar middle"
+    />
+    <div
+      className="bar bottom"
+    />
+  </label>
+</header>
+`;
+
+exports[`Nav should match the snapshot if isChecked is true 1`] = `
+<header>
+  <input
+    checked={true}
+    id="menu"
+    onChange={[Function]}
+    type="checkbox"
+    value={true}
+  />
+  <label
+    htmlFor="menu"
+  >
+    <div
+      className="bar top"
+    />
+    <div
+      className="bar middle"
+    />
+    <div
+      className="bar bottom"
+    />
+  </label>
+  <ul
+    className="Home-nav"
+  >
+    <NavLink
+      id="home"
+      to="/"
+    >
+      <li>
+        <i
+          className="fas fa-home"
+        />
+        Home
+      </li>
+    </NavLink>
+    <NavLink
+      className="nav"
+      to="/contact"
+    >
+      <li>
+        <i
+          className="fas fa-envelope"
+        />
+        Contact
+      </li>
+    </NavLink>
+  </ul>
+</header>
+`;

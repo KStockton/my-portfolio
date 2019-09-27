@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should match the snapshot 1`] = `
+<div>
+  <footer>
+    <section
+      className="one"
+    >
+      <h2>
+        About Me
+      </h2>
+      <div>
+        <blockquote>
+          <span
+            className="tab"
+          >
+            I am a Denver,
+          </span>
+           Colorado Native, and recent graduate from Turing School of Software and Design. I have a passion for software engineer because I enjoy the never-ending challenge between art, analysis, creativity, and code. 
+          <br />
+          <br />
+           
+          <span
+            className="tab"
+          >
+             I am seeking
+          </span>
+           a software engineering position on an agile team that blends the never-ending challenge of complex problem solving with open-minded curiosity. My background ranges from a BS in Chemistry, UPS, Customer Service to Door to Door sells. For the past 8 years, I have been a mentor with kids in Big Brother Big Sister. Other times I enjoy hiking, movies, basketball, football, reading, to name a few. Thanks for visiting!
+        </blockquote>
+      </div>
+    </section>
+    <section>
+      <Link
+        to="/contact"
+      >
+        <div>
+          <p>
+            <i
+              className="fas fa-envelope"
+            />
+            Contact Me
+          </p>
+        </div>
+      </Link>
+    </section>
+    <section>
+      <h2>
+        Activities
+      </h2>
+      <ul>
+        <li
+          key="DFgtgRBAW"
+        >
+          <i
+            className="fas fa-basketball-ball"
+          />
+        </li>
+        <li
+          key="dc0UzXDcut"
+        >
+          <i
+            className="fas fa-hands-helping"
+          />
+        </li>
+        <li
+          key="FcDU22L5v3"
+        >
+          <i
+            className="fas fa-book"
+          />
+        </li>
+        <li
+          key="lSZOFxMig5"
+        >
+          <i
+            className="fas fa-hiking"
+          />
+        </li>
+        <li
+          key="-qF3Lew17p"
+        >
+          <i
+            className="fas fa-plane"
+          />
+        </li>
+        <li
+          key="-gAvTyHdA6"
+        >
+          <i
+            className="fas fa-football-ball"
+          />
+        </li>
+        <li
+          key="0bRfadM6yx"
+        >
+          <i
+            className="fas fa-puzzle-piece"
+          />
+        </li>
+        <li
+          key="Twaj5SnG5g"
+        >
+          <i
+            className="fas fa-dog"
+          />
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <aside>
+    <p>
+      This page was built and deployed with:
+    </p>
+    <ul>
+      <li>
+        <i
+          className="fab fa-aws"
+        />
+      </li>
+      <li>
+        <i
+          className="fab fa-react"
+        />
+      </li>
+      <li>
+        <i
+          className="fab fa-sass"
+        />
+      </li>
+      <li>
+        <img
+          alt="formik-logo"
+          src="formik.png"
+        />
+      </li>
+      <li>
+        <img
+          alt="aws lambda icon"
+          src="awsLambda.png"
+        />
+      </li>
+      <li>
+        <img
+          alt="aws gateway api icon"
+          src="awsgateway.png"
+        />
+      </li>
+    </ul>
+  </aside>
+</div>
+`;

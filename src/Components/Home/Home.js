@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from '../Footer/Footer';
 import { webpageInfo } from '../../Util/webpageInfo';
 const shortid = require('shortid');
 
 const Home = () => {
-
-  const [ selected, setSelected ] = useState(false);
-
 
 
   return (
@@ -38,8 +35,6 @@ const Home = () => {
                     <h4>Source</h4>
                   </li>
                 </a>
-                {/* <button hidden onClick={() => setSelected(true)}>Tech Stack</button>
-          {selected ? <p >More Details</p> : <p>false</p>} */}
                 <a href={ project.liveLink }>
                   <li>
                     <h4>Live</h4>
