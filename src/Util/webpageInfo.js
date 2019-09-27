@@ -95,8 +95,7 @@ export const webpageInfo =
       link: 'https://github.com/KStockton/my-portfolio/',
       classname: 'fas fa-code'
     },
-  ],
-  
+  ]
 };
 
 

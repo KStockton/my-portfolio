@@ -15,10 +15,11 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <blockquote>
-              I am a Denver, Colorado Native, and recent graduate from Turing 
-              School of Software and Design. I have a passion for software 
-              engineer because I enjoy the never-ending challenge between art, 
-              analysis, creativity, and code. <br></br> I am seeking a software engineering 
+              <span className='tab'>I am a Denver,</span> Colorado Native, 
+              and recent graduate from Turing School of Software and Design. 
+              I have a passion for software engineer because I enjoy the never-ending 
+              challenge between art, analysis, creativity, and code. <br/>
+              <br/> <span className='tab'> I am seeking</span> a software engineering 
               position on an agile team that blends the never-ending challenge of 
               complex problem solving with open-minded curiosity. My background 
               ranges from a BS in Chemistry, UPS, Customer Service to Door to 

@@ -11,9 +11,21 @@ exports[`Footer should match the snapshot 1`] = `
       </h2>
       <div>
         <blockquote>
-          I am a Denver, Colorado Native, and recent graduate from Turing School of Software and Design. I have a passion for software engineer because I enjoy the never-ending challenge between art, analysis, creativity, and code. 
+          <span
+            className="tab"
+          >
+            I am a Denver,
+          </span>
+           Colorado Native, and recent graduate from Turing School of Software and Design. I have a passion for software engineer because I enjoy the never-ending challenge between art, analysis, creativity, and code. 
           <br />
-           I am seeking a software engineering position on an agile team that blends the never-ending challenge of complex problem solving with open-minded curiosity. My background ranges from a BS in Chemistry, UPS, Customer Service to Door to Door sells. For the past 8 years, I have been a mentor with kids in Big Brother Big Sister. Other times I enjoy hiking, movies, basketball, football, reading, to name a few. Thanks for visiting!
+          <br />
+           
+          <span
+            className="tab"
+          >
+             I am seeking
+          </span>
+           a software engineering position on an agile team that blends the never-ending challenge of complex problem solving with open-minded curiosity. My background ranges from a BS in Chemistry, UPS, Customer Service to Door to Door sells. For the past 8 years, I have been a mentor with kids in Big Brother Big Sister. Other times I enjoy hiking, movies, basketball, football, reading, to name a few. Thanks for visiting!
         </blockquote>
       </div>
     </section>
@@ -37,56 +49,56 @@ exports[`Footer should match the snapshot 1`] = `
       </h2>
       <ul>
         <li
-          key="xutcwIzhZ"
+          key="DFgtgRBAW"
         >
           <i
             className="fas fa-basketball-ball"
           />
         </li>
         <li
-          key="jEoTtrBrII"
+          key="dc0UzXDcut"
         >
           <i
             className="fas fa-hands-helping"
           />
         </li>
         <li
-          key="PysvfX0Ff3"
+          key="FcDU22L5v3"
         >
           <i
             className="fas fa-book"
           />
         </li>
         <li
-          key="ttvRYBh4e5"
+          key="lSZOFxMig5"
         >
           <i
             className="fas fa-hiking"
           />
         </li>
         <li
-          key="QjkgExSjAk"
+          key="-qF3Lew17p"
         >
           <i
             className="fas fa-plane"
           />
         </li>
         <li
-          key="VkM8aaVtDX"
+          key="-gAvTyHdA6"
         >
           <i
             className="fas fa-football-ball"
           />
         </li>
         <li
-          key="l8-JeZCXVi"
+          key="0bRfadM6yx"
         >
           <i
             className="fas fa-puzzle-piece"
           />
         </li>
         <li
-          key="-HQw6buloi"
+          key="Twaj5SnG5g"
         >
           <i
             className="fas fa-dog"
