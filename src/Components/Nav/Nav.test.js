@@ -6,9 +6,10 @@ import  { shallow } from 'enzyme';
 const mockIsChecked = jest.fn();
 
 describe('Nav', () => {
-  let wrapper;
+  let wrapper, mockEvent;
 
   beforeEach(() => {
+    mockEvent = { target: { checked: true }};
     wrapper = shallow(<Nav
       handleChange={ mockIsChecked }
     />);
@@ -17,7 +18,6 @@ describe('Nav', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
   
   it('should match the snapshot if isChecked is true', () => {
     wrapper.setState({ isChecked: true });
@@ -29,9 +29,7 @@ describe('Nav', () => {
   });
 
   it('should update isChecked when called', () => {
-    const event = { target: { checked: true }};
-
-    wrapper.instance().handleChange(event);
+    wrapper.instance().handleChange(mockEvent);
     expect(wrapper.state().isChecked).toBe(true);
   });
 
@@ -39,14 +37,7 @@ describe('Nav', () => {
     const spy = jest.spyOn(wrapper.instance(), 'handleChange');
     wrapper.instance().forceUpdate();
     
-    const mockEvent = {
-      target: {
-        checked: true
-      }
-    };
-
     wrapper.find('#menu').simulate('change', mockEvent);
-
     expect(spy).toHaveBeenCalled();
   });
 
