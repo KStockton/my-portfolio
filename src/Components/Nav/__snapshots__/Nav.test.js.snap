@@ -51,6 +51,7 @@ exports[`Nav should match the snapshot if isChecked is true 1`] = `
     className="Home-nav"
   >
     <NavLink
+      id="home"
       to="/"
     >
       <li>

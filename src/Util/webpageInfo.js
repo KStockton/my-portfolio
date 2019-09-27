@@ -91,16 +91,12 @@ export const webpageInfo =
       link: `${resumePDF}`,
       classname: 'far fa-file-pdf'
     },
-    //Need to update with new word resume and fix strange formating
-    // {
-    //   link: `${resumeWord}`,
-    //   classname: 'far fa-file-word'
-    // },
     {
       link: 'https://github.com/KStockton/my-portfolio/',
       classname: 'fas fa-code'
     },
-  ]
+  ],
+  
 };
 
 

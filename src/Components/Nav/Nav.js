@@ -33,7 +33,7 @@ class Nav extends Component {
         </label>
         { (isChecked) ? 
           <ul className="Home-nav">
-            <NavLink to='/'>
+            <NavLink to='/' id='home'>
               <li>
                 <i className="fas fa-home"></i>
                 Home
