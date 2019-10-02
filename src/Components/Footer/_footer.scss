@@ -134,9 +134,12 @@ footer {
     @include footer-corner-borders;
 
     h2 {
-      text-align: right;
-      text-transform: lowercase;
+      text-align: center;
+      text-transform: capitalize;
       z-index: 2;
+      background: #ffa500;
+      color: #ffffff;
+      width: 10ch;
     }
 
     ul {
