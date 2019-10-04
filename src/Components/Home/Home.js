@@ -11,7 +11,7 @@ const Home = () => {
       <main>
         <header className='name-title'>
           <h1>Michael King-Stockton</h1>
-          <p>Build <strong>|</strong> Collaborate <strong>|</strong> Care <strong>|</strong> Repeat</p>
+          <p>Build <strong>|</strong> Collaborate <strong>|</strong> Care <strong>|</strong> Learn</p>
         </header>
         <ul>
           { webpageInfo.resourceLinks.map(item =>

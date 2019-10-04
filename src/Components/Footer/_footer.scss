@@ -42,7 +42,6 @@ footer {
         font-size: 18px;
         font-family: 'PT', sans-serif;
         z-index: 2;
-        font-style: italic;
         word-wrap: break-word;
         padding: 35px;
         
@@ -65,8 +64,6 @@ footer {
           right: 21px;
         }
       }
-
-
     }
   }
 
@@ -134,9 +131,12 @@ footer {
     @include footer-corner-borders;
 
     h2 {
-      text-align: right;
-      text-transform: lowercase;
+      text-align: center;
+      text-transform: capitalize;
       z-index: 2;
+      background: #ffa500;
+      color: #ffffff;
+      width: 10ch;
     }
 
     ul {

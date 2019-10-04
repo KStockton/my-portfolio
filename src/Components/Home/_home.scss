@@ -6,7 +6,7 @@ main header {
 
     h1 {
       border-right: 3px solid rgba(0,0,0,0);
-      width: calc(100% - 2rem);
+      width: 18ch;
       overflow: hidden;
       white-space: nowrap;
       color: #333333;
@@ -17,7 +17,7 @@ main header {
       text-transform: capitalize;
       font-family: 'Arvo', serif;
       animation: typewriter 3s steps(18),
-      blinkCursor 750ms steps(18) infinite normal;
+      blinkCursor 750ms steps(17) infinite normal;
     }
 
     p {
@@ -87,34 +87,38 @@ main header {
     }
 
     article:nth-child(1) {
-      background-image: url('../assets/abc.jpg');
+      background-image: url('../assets/palette.jpg');
     }
 
     article:nth-child(2) {
-      background-image: url('../assets/trapperkeeper.jpg');
+      background-image: url('../assets/abc.jpg');
     }
 
     article:nth-child(3) {
-      background-image: url('../assets/news.jpg');
+      background-image: url('../assets/trapperkeeper.jpg');
     }
 
     article:nth-child(4) {
+      background-image: url('../assets/news.jpg');
+    }
+
+    article:nth-child(5) {
       background-image: url('../assets/factory.jpg');
     }
     
-    article:nth-child(5) {
+    article:nth-child(6) {
       background-image: url('../assets/movie.jpg');
     }
 
-    article:nth-child(6) {
+    article:nth-child(7) {
       background-image: url('../assets/climbon.jpg');
     }
 
-    article:nth-child(7) {
+    article:nth-child(8) {
       background-image: url('../assets/NBADraft.jpg');
     }
 
-    article:nth-child(8) {
+    article:nth-child(9) {
       background-image: url('../assets/starwars.jpg');
     }
       

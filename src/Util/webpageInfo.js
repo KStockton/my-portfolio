@@ -1,10 +1,14 @@
 import resumePDF from '../assets/MichaelKS_Resume_2019.pdf';
-// import resumeWord from '../assets/MichaelKS_Resume_2019.docx';
-
 
 export const webpageInfo = 
 { 
   projects: [
+    {
+      gitHubLink: 'https://github.com/KStockton/BE-Palette-Picker',
+      liveLink: 'https://backendpalettelit.herokuapp.com/',
+      name: 'Palette Picker',
+      description: 'Backend Knex Express Travis CI'
+    }, 
     {
       gitHubLink: 'https://github.com/KStockton/Vue.js-Synonyms-v1',
       liveLink: 'https://thesaurus-challenge.herokuapp.com/',
@@ -25,7 +29,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/pocket_ramiro_react',
-      liveLink: 'https://pocket-ramiro-react.herokuapp.com/',
+      liveLink: '',
       name: 'Pocket Ramiro',
       description: 'Track issues and tickets for Facility Equipment'
     }, 
