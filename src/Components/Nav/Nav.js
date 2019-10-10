@@ -12,7 +12,7 @@ class Nav extends Component {
   handleChange = (event) => {
     const { checked } = event.target;
 
-    this.setState({isChecked: checked });
+    this.setState({ isChecked: checked });
   }
   
   render() {
