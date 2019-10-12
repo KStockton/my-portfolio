@@ -10,21 +10,15 @@ import NotFound from '../NotFound/NotFound';
 class App extends Component {
 
   render() {
-    
+
     return (
       <div>
         <Nav/>
-        { (this.props.history.location === '/') && <Home/> }
+        { (this.props.history.location === '/') && <Home/>}
         <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route  path="/contact">
-            <Contact/>
-          </Route>
-          <Route>
-            <NotFound/>
-          </Route> 
+          <Route exact path="/" component={Home}/>
+          <Route  path="/contact" component={Contact}/>
+          <Route path='' component={NotFound}/>
         </Switch>
       </div>
     );

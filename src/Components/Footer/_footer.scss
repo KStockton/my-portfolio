@@ -196,39 +196,46 @@ aside {
     justify-content: center;
     list-style-type: none;
 
-      li:nth-child(4) img {
-        height: 72px;
-        width: 85px;
-      }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      width: 100%;
+      height: 100%;
+    }
+    
+    li:nth-child(1) {
+      color: #ffa500;
+    }
 
-      li:nth-child(5) img {
-        height: 61px;
-        width: 61px;
-      }
+    li:nth-child(2) {
+      color: #62dfff;
+    }
 
-      li:nth-child(6) img {
-        height: 67px;
-        width: 72px;
-      }
+    li:nth-child(3) {
+      color: #f80880;
+    }
 
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-        width: 100%;
-        height: 100%;
-      }
-      
-      li:nth-child(1) {
-        color: #ffa500;
-      }
-      li:nth-child(2) {
-        color: #62dfff;
-      }
-      li:nth-child(3) {
-        color: #f80880;
-      }
+    li:nth-child(4) img {
+      height: 72px;
+      width: 85px;
+    }
+
+    li:nth-child(5) img {
+      height: 61px;
+      width: 61px;
+    }
+
+    li:nth-child(6) img {
+      height: 67px;
+      width: 72px;
+    }
+
+    li:nth-child(7) img {
+      height: 56px;
+      width: 84px;
+    }
   }
 }
 

@@ -11,7 +11,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/Vue.js-Synonyms-v1',
-      liveLink: 'https://thesaurus-challenge.herokuapp.com/',
+      liveLink: 'http://synonyms-thesaurus.s3-website-us-east-1.amazonaws.com',
       name: 'Synonyms',
       description: 'A Thesaurus in Vue'
     }, 
@@ -56,7 +56,8 @@ export const webpageInfo =
       liveLink: 'https://kstockton.github.io/swapi-box/',
       name: 'Swapi Box',
       description: 'Star Wars Characters, Vehicles and Planets'
-    }],
+    }
+  ],
   activities: [
     {
       classname: 'fas fa-basketball-ball'
