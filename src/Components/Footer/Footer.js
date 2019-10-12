@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cloudfront from '../../assets/cloudfront_logo.jpg';
 import formik from '../../assets/formik.png';
 import awsLambda from '../../assets/awsLambda.png';
 import awsgateway from '../../assets/awsgateway.png';
@@ -63,13 +64,16 @@ const Footer = () => {
             <i className="fab fa-sass"></i>
           </li>
           <li>
-            <img src={formik} alt='formik-logo'/>
+            <img src={formik} alt='formik logo'/>
           </li>
           <li>
-            <img src={awsLambda} alt='aws lambda icon'/>
+            <img src={awsLambda} alt='aws lambda logo'/>
           </li>
           <li>
-            <img src={awsgateway} alt='aws gateway api icon'/>
+            <img src={awsgateway} alt='aws gateway logo'/>
+          </li>
+          <li>
+            <img src={cloudfront} alt='aws cloudfront logo'/>
           </li>
         </ul>
       </aside>

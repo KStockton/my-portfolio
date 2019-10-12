@@ -6,7 +6,7 @@ import  { BrowserRouter } from 'react-router-dom';
 import 'normalize.css';
 
 const router = (
-  <BrowserRouter>
+  <BrowserRouter forceRefresh={true}>
     <App/>
   </BrowserRouter>
 );
