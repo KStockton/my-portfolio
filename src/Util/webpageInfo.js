@@ -53,7 +53,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/swapi-box',
-      liveLink: 'https://kstockton.github.io/swapi-box/',
+      liveLink: 'http://swapibox.s3-website-us-east-1.amazonaws.com',
       name: 'Swapi Box',
       description: 'Star Wars Characters, Vehicles and Planets'
     }
