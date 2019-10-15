@@ -4,7 +4,9 @@ import cloudfront from '../../assets/cloudfront_logo.jpg';
 import formik from '../../assets/formik.png';
 import awsLambda from '../../assets/awsLambda.png';
 import awsgateway from '../../assets/awsgateway.png';
+import sns from '../../assets/amazon_sns_logo.png';
 import { webpageInfo } from '../../Util/webpageInfo';
+
 const shortid = require('shortid');
 
 const Footer = () => {
@@ -16,17 +18,21 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <blockquote>
-              <span className='tab'>I am a Denver,</span> Colorado Native, 
-              and recent graduate from Turing School of Software and Design. 
-              I have a passion for software engineer because I enjoy the never-ending 
-              challenge between art, analysis, creativity, and code. <br/>
-              <br/> <span className='tab'> I am seeking</span> a software engineering 
-              position on an agile team that blends the never-ending challenge of 
-              complex problem solving with open-minded curiosity. My background 
-              ranges from a BS in Chemistry, UPS, Customer Service to Door to 
-              Door sells. For the past 8 years, I have been a mentor with kids 
-              in Big Brother Big Sister. Other times I enjoy hiking, movies, 
-              basketball, football, reading, to name a few. Thanks for visiting!
+              <span className='tab'>Michael King-Stockton is a</span> Denver,
+              Colorado native and recent graduate from Turing School of Software 
+              and Design. Michael has a passion for and enjoys software engineering 
+              because of the never-ending challenge between art, analysis, creativity, 
+              and code.<br/>
+              <br/>
+              <span className='tab'>Michael is seeking</span> a software engineering 
+              position on an agile team that blends the challenge of complex 
+              problem solving with open-minded curiosity. His background combines a 
+              B.S. in Chemistry from Xavier University and employment experience that 
+              includes UPS, customer service, and door-to-door sales. For the past eight 
+              years, Michael has been a mentor with the Big Brother Big Sister Program 
+              motivating children to strive for their brightest futures. In his spare time, 
+              he enjoys hiking, movies, basketball, football, and reading, to name a few. 
+              Thank you for visiting!
             </blockquote>
           </div>
         </section>
@@ -74,6 +80,9 @@ const Footer = () => {
           </li>
           <li>
             <img src={cloudfront} alt='aws cloudfront logo'/>
+          </li>
+          <li>
+            <img src={sns} alt='aws simple notification service logo'/>
           </li>
         </ul>
       </aside>
