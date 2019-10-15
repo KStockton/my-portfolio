@@ -18,20 +18,20 @@ const Footer = () => {
           <h2>About Me</h2>
           <div>
             <blockquote>
-              <span className='tab'>Michael King-Stockton is a</span>Denver,
+              <span className='tab'>Michael King-Stockton is a</span> Denver,
               Colorado native and recent graduate from Turing School of Software 
               and Design. Michael has a passion for and enjoys software engineering 
               because of the never-ending challenge between art, analysis, creativity, 
               and code.<br/>
               <br/>
-              <span className='tab'>Michael is seeking</span>a software engineering 
+              <span className='tab'>Michael is seeking</span> a software engineering 
               position on an agile team that blends the challenge of complex 
               problem solving with open-minded curiosity. His background combines a 
               B.S. in Chemistry from Xavier University and employment experience that 
               includes UPS, customer service, and door-to-door sales. For the past eight 
               years, Michael has been a mentor with the Big Brother Big Sister Program 
               motivating children to strive for their brightest futures. In his spare time, 
-              he enjoys hiking, movies, basketball, football, and reading, just to name a few. 
+              he enjoys hiking, movies, basketball, football, and reading, to name a few. 
               Thank you for visiting!
             </blockquote>
           </div>
