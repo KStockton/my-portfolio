@@ -236,6 +236,11 @@ aside {
       height: 56px;
       width: 84px;
     }
+
+    li:nth-child(8) img {
+      height: 74px;
+      width: 115px;
+    }
   }
 }
 
@@ -263,7 +268,7 @@ aside {
 
 @media only screen and (max-width: 406px) {
   footer {
-    grid-template-rows: 605px 150px 200px;
+    grid-template-rows: 782px 220px 200px;
 
     section:nth-child(3) {
       

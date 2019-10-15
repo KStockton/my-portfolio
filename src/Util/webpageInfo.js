@@ -29,7 +29,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/pocket_ramiro_react',
-      liveLink: '',
+      liveLink: null,
       name: 'Pocket Ramiro',
       description: 'Track issues and tickets for Facility Equipment'
     }, 
@@ -53,7 +53,7 @@ export const webpageInfo =
     }, 
     {
       gitHubLink: 'https://github.com/KStockton/swapi-box',
-      liveLink: 'http://swapibox.s3-website-us-east-1.amazonaws.com',
+      liveLink: 'https://kstockton.github.io/swapi-box/',
       name: 'Swapi Box',
       description: 'Star Wars Characters, Vehicles and Planets'
     }
@@ -63,7 +63,7 @@ export const webpageInfo =
       classname: 'fas fa-basketball-ball'
     },
     {
-      classname: 'fas fa-hands-helping'
+      classname: 'far fa-handshake'
     },
     {
       classname: 'fas fa-book'
@@ -82,7 +82,8 @@ export const webpageInfo =
     },
     {
       classname: 'fas fa-dog'
-    }],
+    },
+  ],
   resourceLinks: [
     {
       link: 'https://github.com/KStockton',
